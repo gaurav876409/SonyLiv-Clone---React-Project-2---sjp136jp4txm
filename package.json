@@ -12,8 +12,25 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mantine/carousel": "^6.0.19",
+    "@mantine/core": "^6.0.19",
+    "@mantine/hooks": "^6.0.19",
+    "@mui/material": "^5.14.4",
+    "@reduxjs/toolkit": "^1.9.5",
+    "@tabler/icons-react": "^2.30.0",
+    "axios": "^1.4.0",
+    "embla-carousel-autoplay": "^8.0.0-rc11",
+    "embla-carousel-react": "^8.0.0-rc11",
+    "jsx-runtime": "^1.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.10.1",
+    "react-redux": "^8.1.2",
+    "react-swipeable-views": "^0.14.0",
+    "redux": "^4.2.1",
+    "swiper": "^10.1.0"
   },
   "jest": {
     "moduleNameMapper": {
