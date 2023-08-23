@@ -121,7 +121,7 @@
 }
 .thumbnail_item{
     width: 200px;
-    height: 250px;
+    height: 350px;
     transition: transform 0.3s ease-in-out;
     background-color: white;
     border-radius: 10px;
@@ -131,10 +131,19 @@
 }
 .thumbnail_item img{
     width: 200px;
-    height: 250px;
-    object-fit: cover;
+    height: 350px;
+    object-fit: contain;
 }
 
 .thumbnail_item:hover {
     transform: scale(1.1);
-  }
+}
+
+.home_big_image{
+    display: flex;
+    justify-content: center;
+    background: #151515;
+}
+.home_big_image img{
+    border-radius: 25px;
+}

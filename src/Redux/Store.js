@@ -1,9 +1,23 @@
-// store.js
+import { configureStore, combineReducers } from '@reduxjs/toolkit';
+import storage from 'redux-persist/lib/storage'
+import { persistReducer } from 'redux-persist'
+import showDetailsReducer from './Reducer';
 
-import { configureStore } from '@reduxjs/toolkit';
-import rootReducer from './Root';
+const persistConfig = {
+    key: 'root',
+    storage,
+  }
 
-const store = configureStore({ reducer: rootReducer })
+  const reducer = combineReducers({
+    showDetails: showDetailsReducer,
+    user: showDetailsReducer,
+    watchlist: showDetailsReducer
+    // other reducers...
+  });
+
+  const persistedReducer = persistReducer(persistConfig, reducer)
+
+const store = configureStore({ reducer: persistedReducer })
 
 export default store;
 
