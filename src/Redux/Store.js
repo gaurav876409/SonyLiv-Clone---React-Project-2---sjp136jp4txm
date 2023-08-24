@@ -2,20 +2,22 @@ import { configureStore, combineReducers } from '@reduxjs/toolkit';
 import storage from 'redux-persist/lib/storage'
 import { persistReducer } from 'redux-persist'
 import showDetailsReducer from './Reducer';
+import UserReducer from './UserReducer';
+import WatchReducer from './WatchReducer';
 
 const persistConfig = {
-    key: 'root',
-    storage,
-  }
+  key: 'root',
+  storage,
+}
 
-  const reducer = combineReducers({
-    showDetails: showDetailsReducer,
-    user: showDetailsReducer,
-    watchlist: showDetailsReducer
-    // other reducers...
-  });
+const rootReducer = combineReducers({
+  showDetails: showDetailsReducer,
+  user: UserReducer,
+  watchlist: WatchReducer
+  // other reducers...
+});
 
-  const persistedReducer = persistReducer(persistConfig, reducer)
+const persistedReducer = persistReducer(persistConfig, rootReducer)
 
 const store = configureStore({ reducer: persistedReducer })
 

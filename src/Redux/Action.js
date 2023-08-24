@@ -124,30 +124,25 @@ export const addToWatchlist = (showId) => async (dispatch) => {
     const token = storedUser.token;
     console.log("line 124", token)
 
-    const response = await fetch(
-      `https://academics.newtonschool.co/api/v1/social_media/watchlist/:${showId}`,
-      // {showId},
-
+    const response = await axios.patch(
+      `https://academics.newtonschool.co/api/v1/social_media/watchlist/${showId}`,
+      { showId }, // Pass the showId in the request body
       {
-        method: "PATCH",
         headers: {
-          'projectId': 'sjp136jp4txm',
-          'Authorization': `Bearer ${token}`,
+          Authorization: `Bearer ${token}`,
+          projectId: 'sjp136jp4txm',
         },
-        body: JSON.stringify({
-          'showId': showId,
-        }),
       }
     );
-    const data = await response.json()
-
-    console.log("line 140", data)
-
-    // dispatch({
-    //   type: 'ADD_WATCHLIST_SUCCESS',
-    //   payload: data,
-    // });
+    console.log("line 137", response.data)
+    if(response){
+      dispatch({
+        type: 'ADD_WATCHLIST_SUCCESS',
+        payload: response.data,
+      });
+    }
   } catch (error) {
+    console.log("error", error)
     dispatch({
       type: 'ADD_WATCHLIST_FAILURE',
       payload: error,

@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { LiaCrownSolid } from 'react-icons/lia'
 import { FiCheck } from 'react-icons/fi'
+import { BsPlusLg } from 'react-icons/bs'
 import { PiShareFat } from 'react-icons/pi'
 import { Carousel } from '@mantine/carousel';
 import { Link } from 'react-router-dom';
@@ -12,7 +13,6 @@ import { useDispatch } from 'react-redux';
 import { addToWatchlist, removeFromWatchlist } from '../../Redux/Action';
 
 const Show = () => {
-  // console.log("Content in Show Component:", content);
   const { id } = useParams();
   const showDetails = useSelector(state => state.showDetails.showDetails);
   const selectedShow = showDetails?.data?.find(item => item._id === id);
@@ -23,11 +23,16 @@ const Show = () => {
   const shortFilm = showDetails?.data?.filter(item => item.type === 'short film');
   const trailer = showDetails?.data?.filter(item => item.type === 'trailer');
   const webSeries = showDetails?.data?.filter(item => item.type === 'web series');
-  console.log("line 26", id)
   const dispatch = useDispatch();
+  const watchlist = useSelector(state => state.watchlist.watchlist);
+  const isAddedToWatchlist = watchlist.some(item => item.data._id === id);
+  console.log("line 28 show", watchlist)
+  console.log("line 29", isAddedToWatchlist)
   const handleAddToWatchlist = () => {
-    // console.log("Content ID:", content.id);
-    dispatch(addToWatchlist(id)); // Pass the showId to the action
+    dispatch(addToWatchlist(id)); 
+  };
+  const handleRemoveFromWatchlist = () => {
+    dispatch(removeFromWatchlist(id)); 
   };
 
   return (
@@ -77,10 +82,17 @@ const Show = () => {
           </div>
           <div className='show_body_subscribe_div2'><span>Stream Live Sports and Ad-Free Originals</span></div>
         </button>
-        <button className='show_body_list' onClick={handleAddToWatchlist}>
+        {isAddedToWatchlist ? (
+          <button className='show_body_list' onClick={handleRemoveFromWatchlist}>
           <span><FiCheck style={{ width: "23px", height: "23px", fontWeight: "700" }} /></span>
           <span>My List</span>
         </button>
+        ): (
+          <button className='show_body_list' onClick={handleAddToWatchlist}>
+          <span><BsPlusLg style={{ width: "23px", height: "23px", fontWeight: "700" }} /></span>
+          <span>My List</span>
+        </button>
+        )}
         <button className='show_body_share'>
           <span><PiShareFat style={{ width: "23px", height: "23px" }} /></span>
           <span>Share</span>
