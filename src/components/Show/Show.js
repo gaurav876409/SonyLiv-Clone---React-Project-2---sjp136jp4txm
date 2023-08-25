@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './Show.css';
 import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
@@ -24,17 +24,11 @@ const Show = () => {
   const trailer = showDetails?.data?.filter(item => item.type === 'trailer');
   const webSeries = showDetails?.data?.filter(item => item.type === 'web series');
   const dispatch = useDispatch();
-  const watchlist = useSelector(state => state.watchlist.watchlist);
-  const isAddedToWatchlist = watchlist.some(item => item.data._id === id);
-  console.log("line 28 show", watchlist)
-  console.log("line 29", isAddedToWatchlist)
+  const [isToggled, setIsToggled] = useState(false);
   const handleAddToWatchlist = () => {
-    dispatch(addToWatchlist(id)); 
+    dispatch(addToWatchlist(id));
+    setIsToggled(!isToggled); 
   };
-  const handleRemoveFromWatchlist = () => {
-    dispatch(removeFromWatchlist(id)); 
-  };
-
   return (
     <div className='show_container'>
       <div className='navbar_background'></div>
@@ -51,8 +45,6 @@ const Show = () => {
           <p>{selectedShow?.type}</p>
           <span className='dot'></span>
           <p>{selectedShow?.createdAt}</p>
-          <span className='dot'></span>
-          <p>{selectedShow?.appType}</p>
           <span className='dot'></span>
           <p>{selectedShow?.keywords[0]}, {selectedShow?.keywords[1]}, {selectedShow?.keywords[2]}</p>
         </div>
@@ -82,17 +74,16 @@ const Show = () => {
           </div>
           <div className='show_body_subscribe_div2'><span>Stream Live Sports and Ad-Free Originals</span></div>
         </button>
-        {isAddedToWatchlist ? (
-          <button className='show_body_list' onClick={handleRemoveFromWatchlist}>
-          <span><FiCheck style={{ width: "23px", height: "23px", fontWeight: "700" }} /></span>
-          <span>My List</span>
-        </button>
-        ): (
+         {/* <button className='show_body_list'>
+           <span><FiCheck style={{ width: "23px", height: "23px", fontWeight: "700" }} /></span>
+           <span>My List</span>
+         </button>  */}
           <button className='show_body_list' onClick={handleAddToWatchlist}>
-          <span><BsPlusLg style={{ width: "23px", height: "23px", fontWeight: "700" }} /></span>
+          {isToggled ? <span><FiCheck style={{ width: "23px", height: "23px", fontWeight: "700" }} /></span> : <span><BsPlusLg style={{ width: "23px", height: "23px", fontWeight: "700" }} /></span>  }
+          
           <span>My List</span>
         </button>
-        )}
+         
         <button className='show_body_share'>
           <span><PiShareFat style={{ width: "23px", height: "23px" }} /></span>
           <span>Share</span>

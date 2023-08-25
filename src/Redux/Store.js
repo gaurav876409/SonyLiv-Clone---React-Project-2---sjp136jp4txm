@@ -13,7 +13,7 @@ const persistConfig = {
 const rootReducer = combineReducers({
   showDetails: showDetailsReducer,
   user: UserReducer,
-  watchlist: WatchReducer
+  watchlist: WatchReducer,
   // other reducers...
 });
 

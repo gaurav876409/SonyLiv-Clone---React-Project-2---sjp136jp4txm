@@ -10,8 +10,7 @@ export const UPDATE_PASSWORD_FAILURE = 'UPDATE_PASSWORD_FAILURE';
 export const LOGOUT = 'LOGOUT';
 export const ADD_WATCHLIST_SUCCESS = 'ADD_WATCHLIST_SUCCESS';
 export const ADD_WATCHLIST_FAILURE = 'ADD_WATCHLIST_FAILURE';
-export const REMOVE_WATCHLIST_SUCCESS = 'REMOVE_WATCHLIST_SUCCESS';
-export const REMOVE_WATCHLIST_FAILURE = 'REMOVE_WATCHLIST_FAILURE';
+
 
 export const fetchShowDetails =  async(dispatch, projectId) => {
   try {
@@ -125,7 +124,8 @@ export const addToWatchlist = (showId) => async (dispatch) => {
     console.log("line 124", token)
 
     const response = await axios.patch(
-      `https://academics.newtonschool.co/api/v1/social_media/watchlist/${showId}`,
+      // `https://academics.newtonschool.co/api/v1/social_media/watchlist/${showId}`,
+      `https://academics.newtonschool.co/api/v1/social_media/watchlist`,
       { showId }, // Pass the showId in the request body
       {
         headers: {
@@ -150,33 +150,6 @@ export const addToWatchlist = (showId) => async (dispatch) => {
   }
 };
 
-export const removeFromWatchlist = (showId) => async (dispatch) => {
-  try {
-    const storedUser = JSON.parse(localStorage.getItem('user'));
-    const token = storedUser.token;
-
-    const response = await axios.patch(
-      `https://academics.newtonschool.co/api/v1/social_media/watchlist/${showId}`,
-      {},
-      {
-        headers: {
-          Authorization: `Bearer ${token}`,
-          projectId: 'sjp136jp4txm',
-        },
-      }
-    );
-
-    dispatch({
-      type: 'REMOVE_WATCHLIST_SUCCESS',
-      payload: response.data,
-    });
-  } catch (error) {
-    dispatch({
-      type: 'REMOVE_WATCHLIST_FAILURE',
-      payload: error,
-    });
-  }
-};
 
 
 
