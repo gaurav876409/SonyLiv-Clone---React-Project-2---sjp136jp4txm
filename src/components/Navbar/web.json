@@ -1,0 +1,2053 @@
+{
+    "status": "success",
+    "results": 100,
+    "data": [
+        {
+            "_id": "64cffee700bad552e8dcd50b",
+            "title": "Love in the Time of Fentanyl",
+            "description": "A timeless story of dreams, ambition, and the challenges of a big city.",
+            "keywords": [
+                "fantasy",
+                "heroic",
+                "thriller"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt20236978.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:27.574Z",
+            "__v": 1,
+            "cast": [
+                "Emma Miller",
+                "Chris Wilson",
+                "Ella Davis"
+            ],
+            "director": "Ryan Jones",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee700bad552e8dcd50b.mp4"
+        },
+        {
+            "_id": "64cffee700bad552e8dcd505",
+            "title": "In Good Time",
+            "description": "A comedy that explores the ups and downs of life, relationships, and finding oneself.",
+            "keywords": [
+                "thriller",
+                "journey"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt8727262.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:27.494Z",
+            "__v": 1,
+            "cast": [
+                "Emma Brown",
+                "Jane Davis",
+                "Chris Williams"
+            ],
+            "director": "Emma Williams",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee700bad552e8dcd505.mp4"
+        },
+        {
+            "_id": "64cffee700bad552e8dcd519",
+            "title": "Everything Must Go",
+            "description": "A timeless story of dreams, ambition, and the challenges of a big city.",
+            "keywords": [
+                "magic",
+                "survival",
+                "sci-fi"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt5752788.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:27.607Z",
+            "__v": 1,
+            "cast": [
+                "Sarah Brown",
+                "Michael Taylor",
+                "Ryan Smith"
+            ],
+            "director": "Emma Davis",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee700bad552e8dcd519.mp4"
+        },
+        {
+            "_id": "64cffee700bad552e8dcd543",
+            "title": "The Butterfly Effect",
+            "description": "In the heart of the jungle, lies a secret that's waiting to be uncovered.",
+            "keywords": [
+                "romance",
+                "darkness",
+                "sci-fi"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt0289879.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:27.664Z",
+            "__v": 1,
+            "cast": [
+                "Jane Davis",
+                "Ella Wilson",
+                "Alex Taylor"
+            ],
+            "director": "Sarah Miller",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee700bad552e8dcd543.mp4"
+        },
+        {
+            "_id": "64cffee700bad552e8dcd551",
+            "title": "Eises Kälte - Frozen in Time",
+            "description": "When dark forces threaten the realm, a band of misfits come together to save their world.",
+            "keywords": [
+                "romance",
+                "horror",
+                "journey"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt10047356.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:27.699Z",
+            "__v": 1,
+            "cast": [
+                "Emma Brown",
+                "Ella Jones",
+                "Michael Moore"
+            ],
+            "director": "Jane Taylor",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee700bad552e8dcd551.mp4"
+        },
+        {
+            "_id": "64cffee700bad552e8dcd54d",
+            "title": "Once Upon a Time in Little Tokyo",
+            "description": "A journey of love, laughter, and friendship; a tale that celebrates the spirit of humanity.",
+            "keywords": [
+                "sci-fi",
+                "adventure"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt8779410.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:27.692Z",
+            "__v": 1,
+            "cast": [
+                "Ava Brown",
+                "Emma Jones",
+                "Ella Brown"
+            ],
+            "director": "Ava Moore",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee700bad552e8dcd54d.mp4"
+        },
+        {
+            "_id": "64cffee700bad552e8dcd580",
+            "title": "I am Sam",
+            "description": "A journey of love, laughter, and friendship; a tale that celebrates the spirit of humanity.",
+            "keywords": [
+                "journey",
+                "horror"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt6289532.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:27.716Z",
+            "__v": 1,
+            "cast": [
+                "Ella Smith",
+                "Ryan Miller",
+                "Chris Williams"
+            ],
+            "director": "Ava Johnson",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee700bad552e8dcd580.mp4"
+        },
+        {
+            "_id": "64cffee700bad552e8dcd594",
+            "title": "American Pie Presents: The Book of Love",
+            "description": "Facing insurmountable odds, a group of friends discover the true meaning of sacrifice.",
+            "keywords": [
+                "suspense",
+                "magic",
+                "journey"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt1407050.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:27.747Z",
+            "__v": 1,
+            "cast": [
+                "Ella Williams",
+                "Jane Williams",
+                "Ella Davis"
+            ],
+            "director": "Ava Jones",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee700bad552e8dcd594.mp4"
+        },
+        {
+            "_id": "64cffee700bad552e8dcd5d2",
+            "title": "The Legend of the Lone Ranger",
+            "description": "In the heart of the jungle, lies a secret that's waiting to be uncovered.",
+            "keywords": [
+                "suspense",
+                "darkness",
+                "comedy"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt0082648.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:27.866Z",
+            "__v": 1,
+            "cast": [
+                "Ava Smith",
+                "Alex Wilson",
+                "John Moore"
+            ],
+            "director": "Ella Wilson",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee700bad552e8dcd5d2.mp4"
+        },
+        {
+            "_id": "64cffee700bad552e8dcd5e6",
+            "title": "In Time",
+            "description": "In a world where nothing is as it seems, a lone hero rises against the odds.",
+            "keywords": [
+                "love",
+                "betrayal"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt14042070.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:27.924Z",
+            "__v": 1,
+            "cast": [
+                "John Davis",
+                "John Williams",
+                "Ella Wilson"
+            ],
+            "director": "Jane Smith",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee700bad552e8dcd5e6.mp4"
+        },
+        {
+            "_id": "64cffee700bad552e8dcd5ee",
+            "title": "Scooby-Doo Meets the Boo Brothers",
+            "description": "A comedy that explores the ups and downs of life, relationships, and finding oneself.",
+            "keywords": [
+                "thriller",
+                "magic",
+                "drama"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt0189070.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:27.944Z",
+            "__v": 1,
+            "cast": [
+                "Jane Moore",
+                "Ryan Brown",
+                "Ryan Brown"
+            ],
+            "director": "Ava Moore",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee700bad552e8dcd5ee.mp4"
+        },
+        {
+            "_id": "64cffee700bad552e8dcd606",
+            "title": "Julia",
+            "description": "An exploration of family, traditions, and the ties that bind us together.",
+            "keywords": [
+                "epic",
+                "suspense",
+                "revenge"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt3182348.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:27.966Z",
+            "__v": 1,
+            "cast": [
+                "Jane Miller",
+                "Ava Smith",
+                "Jane Jones"
+            ],
+            "director": "Michael Miller",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee700bad552e8dcd606.mp4"
+        },
+        {
+            "_id": "64cffee700bad552e8dcd60c",
+            "title": "A Stitch in Time",
+            "description": "In a world where nothing is as it seems, a lone hero rises against the odds.",
+            "keywords": [
+                "fantasy",
+                "action"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt7480016.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:27.969Z",
+            "__v": 1,
+            "cast": [
+                "John Wilson",
+                "Michael Jones",
+                "Alex Smith"
+            ],
+            "director": "John Miller",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee700bad552e8dcd60c.mp4"
+        },
+        {
+            "_id": "64cffee700bad552e8dcd614",
+            "title": "Kingdoms in Time",
+            "description": "In the heart of the jungle, lies a secret that's waiting to be uncovered.",
+            "keywords": [
+                "horror",
+                "love"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt8362562.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:27.976Z",
+            "__v": 1,
+            "cast": [
+                "Jane Moore",
+                "John Johnson",
+                "John Johnson"
+            ],
+            "director": "Ella Taylor",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee700bad552e8dcd614.mp4"
+        },
+        {
+            "_id": "64cffee700bad552e8dcd61e",
+            "title": "A Place in Time",
+            "description": "A musical journey that will make you laugh, cry, and sing along.",
+            "keywords": [
+                "horror",
+                "epic"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt7479048.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:27.988Z",
+            "__v": 1,
+            "cast": [
+                "Ella Miller",
+                "Ava Miller",
+                "Emma Jones"
+            ],
+            "director": "Alex Miller",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee700bad552e8dcd61e.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd634",
+            "title": "Kraljevo, a story of hope in the time of corona",
+            "description": "A timeless story of dreams, ambition, and the challenges of a big city.",
+            "keywords": [
+                "revenge",
+                "epic",
+                "love"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt19770650.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.033Z",
+            "__v": 1,
+            "cast": [
+                "Chris Williams",
+                "Emma Miller",
+                "Ryan Miller"
+            ],
+            "director": "Ava Davis",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd634.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd63a",
+            "title": "42. The Making of 'Mission: Impossible III' (2006), Part 1",
+            "description": "A timeless story of dreams, ambition, and the challenges of a big city.",
+            "keywords": [
+                "journey",
+                "adventure"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt18304290.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.041Z",
+            "__v": 1,
+            "cast": [
+                "Ava Brown",
+                "Michael Williams",
+                "Ella Smith"
+            ],
+            "director": "Emma Jones",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd63a.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd662",
+            "title": "What Happened to Julia",
+            "description": "A thrilling chase, a deadly mystery, and a protagonist who won't give up.",
+            "keywords": [
+                "darkness",
+                "revenge",
+                "fantasy"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt9351964.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.090Z",
+            "__v": 1,
+            "cast": [
+                "Jane Moore",
+                "Chris Williams",
+                "Ryan Taylor"
+            ],
+            "director": "Emma Taylor",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd662.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd668",
+            "title": "Voyage in Time",
+            "description": "Facing insurmountable odds, a group of friends discover the true meaning of sacrifice.",
+            "keywords": [
+                "fantasy",
+                "revenge"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt2543736.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.092Z",
+            "__v": 1,
+            "cast": [
+                "Ava Brown",
+                "Michael Miller",
+                "Alex Miller"
+            ],
+            "director": "Emma Williams",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd668.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd674",
+            "title": "I Am Sam Kinison",
+            "description": "A comedy that explores the ups and downs of life, relationships, and finding oneself.",
+            "keywords": [
+                "journey",
+                "mystery",
+                "love"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt7693434.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.111Z",
+            "__v": 1,
+            "cast": [
+                "John Moore",
+                "Emma Williams",
+                "Jane Jones"
+            ],
+            "director": "John Jones",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd674.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd66e",
+            "title": "American Pie Revealed",
+            "description": "Facing insurmountable odds, a group of friends discover the true meaning of sacrifice.",
+            "keywords": [
+                "drama",
+                "thriller"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt0471562.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.101Z",
+            "__v": 1,
+            "cast": [
+                "Emma Smith",
+                "John Davis",
+                "Chris Wilson"
+            ],
+            "director": "Chris Williams",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd66e.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd672",
+            "title": "Julia Has Two Lovers",
+            "description": "A musical journey that will make you laugh, cry, and sing along.",
+            "keywords": [
+                "epic",
+                "survival",
+                "heroic"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt0102170.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.110Z",
+            "__v": 1,
+            "cast": [
+                "Chris Miller",
+                "Ryan Johnson",
+                "Michael Jones"
+            ],
+            "director": "Alex Williams",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd672.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd678",
+            "title": "In the Nick of Time",
+            "description": "In the heart of the jungle, lies a secret that's waiting to be uncovered.",
+            "keywords": [
+                "romance",
+                "thriller"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt2624038.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.114Z",
+            "__v": 1,
+            "cast": [
+                "Ella Miller",
+                "Ava Moore",
+                "Chris Wilson"
+            ],
+            "director": "Jane Miller",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd678.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd67e",
+            "title": "Love in the Time of Covid",
+            "description": "An exploration of family, traditions, and the ties that bind us together.",
+            "keywords": [
+                "revenge",
+                "action"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt15041780.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.116Z",
+            "__v": 1,
+            "cast": [
+                "Emma Miller",
+                "John Moore",
+                "Alex Williams"
+            ],
+            "director": "Chris Smith",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd67e.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd68e",
+            "title": "The Lone Ranger",
+            "description": "Dark secrets, forbidden love, and a fight for justice in a society torn apart by its past.",
+            "keywords": [
+                "betrayal",
+                "magic"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt0030382.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.139Z",
+            "__v": 1,
+            "cast": [
+                "Sarah Smith",
+                "Chris Wilson",
+                "Ryan Brown"
+            ],
+            "director": "Ella Davis",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd68e.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd68a",
+            "title": "Cinderella Man: The Real Jim Braddock Story",
+            "description": "A musical journey that will make you laugh, cry, and sing along.",
+            "keywords": [
+                "sci-fi",
+                "adventure",
+                "action"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt0463454.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.131Z",
+            "__v": 1,
+            "cast": [
+                "Michael Jones",
+                "Emma Jones",
+                "Jane Moore"
+            ],
+            "director": "John Moore",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd68a.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd698",
+            "title": "Date in Time",
+            "description": "A sci-fi adventure that challenges our very understanding of reality.",
+            "keywords": [
+                "comedy",
+                "drama"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt2544392.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.148Z",
+            "__v": 1,
+            "cast": [
+                "Alex Johnson",
+                "Emma Miller",
+                "John Davis"
+            ],
+            "director": "Ryan Davis",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd698.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd69a",
+            "title": "Time in a Bottle",
+            "description": "An exploration of family, traditions, and the ties that bind us together.",
+            "keywords": [
+                "love",
+                "action",
+                "sci-fi"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt3410664.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.153Z",
+            "__v": 1,
+            "cast": [
+                "Emma Brown",
+                "Michael Jones",
+                "Michael Jones"
+            ],
+            "director": "Ella Taylor",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd69a.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd6a4",
+            "title": "Time Sleeps in the Orient",
+            "description": "A thrilling chase, a deadly mystery, and a protagonist who won't give up.",
+            "keywords": [
+                "heroic",
+                "thriller"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt0289475.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.164Z",
+            "__v": 1,
+            "cast": [
+                "Jane Davis",
+                "Emma Davis",
+                "Sarah Davis"
+            ],
+            "director": "John Brown",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd6a4.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd6ce",
+            "title": "Schindler's List: 25 Years Later",
+            "description": "A love story that transcends time and space, bound by destiny.",
+            "keywords": [
+                "action",
+                "betrayal",
+                "survival"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt9558892.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.204Z",
+            "__v": 1,
+            "cast": [
+                "Jane Brown",
+                "Alex Johnson",
+                "Ella Davis"
+            ],
+            "director": "Jane Jones",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd6ce.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd6d4",
+            "title": "Chéri-Bibi",
+            "description": "A riveting tale of survival, hope, and the indomitable human spirit.",
+            "keywords": [
+                "darkness",
+                "betrayal",
+                "mystery"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt0197362.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.206Z",
+            "__v": 1,
+            "cast": [
+                "Chris Wilson",
+                "Chris Davis",
+                "Chris Johnson"
+            ],
+            "director": "Chris Taylor",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd6d4.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd6e2",
+            "title": "Four Weddings and a Funeral",
+            "description": "When dark forces threaten the realm, a band of misfits come together to save their world.",
+            "keywords": [
+                "suspense",
+                "epic",
+                "love"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt7587362.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.221Z",
+            "__v": 1,
+            "cast": [
+                "Ava Brown",
+                "Sarah Williams",
+                "Ella Brown"
+            ],
+            "director": "John Davis",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd6e2.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd6e4",
+            "title": "The Lodger: A Story of the London Fog",
+            "description": "Magic, mischief, and a battle between light and darkness.",
+            "keywords": [
+                "sci-fi",
+                "love"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt0017075.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.222Z",
+            "__v": 1,
+            "cast": [
+                "Jane Johnson",
+                "Michael Johnson",
+                "Michael Miller"
+            ],
+            "director": "Ryan Brown",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd6e4.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd6f0",
+            "title": "Scooby-Doo! Pirates Ahoy!",
+            "description": "An exploration of family, traditions, and the ties that bind us together.",
+            "keywords": [
+                "love",
+                "epic"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt0867418.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.246Z",
+            "__v": 1,
+            "cast": [
+                "Michael Wilson",
+                "John Smith",
+                "John Williams"
+            ],
+            "director": "Chris Miller",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd6f0.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd704",
+            "title": "Júlia Martín: Laniakea, What's the Purpose?",
+            "description": "In the aftermath of a great war, a kingdom finds hope in the most unlikely of heroes.",
+            "keywords": [
+                "suspense",
+                "mystery",
+                "sci-fi"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt11505722.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.272Z",
+            "__v": 1,
+            "cast": [
+                "Michael Jones",
+                "Ryan Johnson",
+                "Ella Brown"
+            ],
+            "director": "Ava Miller",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd704.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd70c",
+            "title": "Scooby-Doo! Frankencreepy",
+            "description": "A musical journey that will make you laugh, cry, and sing along.",
+            "keywords": [
+                "revenge",
+                "drama"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt3919322.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.285Z",
+            "__v": 1,
+            "cast": [
+                "Emma Miller",
+                "Chris Moore",
+                "Emma Jones"
+            ],
+            "director": "John Moore",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd70c.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd6c6",
+            "title": "Arabesque: Julia Morgan, Jules Bourgoin, and Rayyane Tabet at Storefront for Art and Architecture",
+            "description": "In a world where nothing is as it seems, a lone hero rises against the odds.",
+            "keywords": [
+                "suspense",
+                "revenge",
+                "thriller"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt15881200.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.195Z",
+            "__v": 1,
+            "cast": [
+                "Ella Davis",
+                "Michael Williams",
+                "Sarah Taylor"
+            ],
+            "director": "Michael Johnson",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd6c6.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd71c",
+            "title": "Alfa Romeó és Júlia",
+            "description": "A sci-fi adventure that challenges our very understanding of reality.",
+            "keywords": [
+                "survival",
+                "sci-fi"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt0062647.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.302Z",
+            "__v": 1,
+            "cast": [
+                "Ella Jones",
+                "Alex Smith",
+                "Ryan Brown"
+            ],
+            "director": "Alex Davis",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd71c.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd724",
+            "title": "Janet Devlin: Young, Female & Addicted",
+            "description": "An exploration of family, traditions, and the ties that bind us together.",
+            "keywords": [
+                "fantasy",
+                "epic",
+                "journey"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt18920886.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.305Z",
+            "__v": 1,
+            "cast": [
+                "Jane Davis",
+                "Chris Brown",
+                "Ryan Taylor"
+            ],
+            "director": "Emma Smith",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd724.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd6f4",
+            "title": "Spy Kids 4: All the Time in the World",
+            "description": "Journey through galaxies, as a crew faces challenges that test their limits and their bond.",
+            "keywords": [
+                "magic",
+                "fantasy",
+                "mystery"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt1517489.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.254Z",
+            "__v": 1,
+            "cast": [
+                "Jane Davis",
+                "John Davis",
+                "Sarah Moore"
+            ],
+            "director": "Jane Davis",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd6f4.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd744",
+            "title": "Everything Must Go",
+            "description": "A riveting tale of survival, hope, and the indomitable human spirit.",
+            "keywords": [
+                "betrayal",
+                "journey",
+                "drama"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt5926556.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.341Z",
+            "__v": 1,
+            "cast": [
+                "Sarah Moore",
+                "Chris Williams",
+                "Jane Moore"
+            ],
+            "director": "Jane Moore",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd744.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd74c",
+            "title": "Aloha, Scooby-Doo!",
+            "description": "In the aftermath of a great war, a kingdom finds hope in the most unlikely of heroes.",
+            "keywords": [
+                "drama",
+                "journey",
+                "betrayal"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt0433771.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.348Z",
+            "__v": 1,
+            "cast": [
+                "Ryan Brown",
+                "Ava Taylor",
+                "John Williams"
+            ],
+            "director": "Jane Jones",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd74c.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd782",
+            "title": "The League of Extraordinary Gentlemen",
+            "description": "In a city full of mysteries, one detective finds clues that could change everything.",
+            "keywords": [
+                "survival",
+                "mystery"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt0311429.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.398Z",
+            "__v": 1,
+            "cast": [
+                "Alex Johnson",
+                "Emma Brown",
+                "Emma Smith"
+            ],
+            "director": "Ella Brown",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd782.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd788",
+            "title": "7 Splinters in Time",
+            "description": "Magic, mischief, and a battle between light and darkness.",
+            "keywords": [
+                "love",
+                "mystery"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt1884378.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.402Z",
+            "__v": 1,
+            "cast": [
+                "Ella Brown",
+                "Ava Moore",
+                "Ava Jones"
+            ],
+            "director": "Emma Jones",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd788.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd796",
+            "title": "Anatole chéri",
+            "description": "In the aftermath of a great war, a kingdom finds hope in the most unlikely of heroes.",
+            "keywords": [
+                "thriller",
+                "drama"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt0149664.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.424Z",
+            "__v": 1,
+            "cast": [
+                "Alex Johnson",
+                "Alex Smith",
+                "Jane Moore"
+            ],
+            "director": "Ryan Wilson",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd796.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd73a",
+            "title": "The JK Show: With Julia and Kayla",
+            "description": "Dark secrets, forbidden love, and a fight for justice in a society torn apart by its past.",
+            "keywords": [
+                "comedy",
+                "love"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt5587000.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.322Z",
+            "__v": 1,
+            "cast": [
+                "John Johnson",
+                "John Johnson",
+                "Alex Williams"
+            ],
+            "director": "Chris Williams",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd73a.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd7d4",
+            "title": "Playing Ghost",
+            "description": "A journey of love, laughter, and friendship; a tale that celebrates the spirit of humanity.",
+            "keywords": [
+                "journey",
+                "heroic",
+                "magic"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt1883300.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.483Z",
+            "__v": 1,
+            "cast": [
+                "Alex Taylor",
+                "Michael Miller",
+                "Ava Williams"
+            ],
+            "director": "Ella Wilson",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd7d4.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd7ee",
+            "title": "Julia: All in Me",
+            "description": "In a world where nothing is as it seems, a lone hero rises against the odds.",
+            "keywords": [
+                "mystery",
+                "heroic",
+                "revenge"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt0412883.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.512Z",
+            "__v": 1,
+            "cast": [
+                "Sarah Johnson",
+                "John Davis",
+                "John Davis"
+            ],
+            "director": "Emma Davis",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd7ee.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd7f0",
+            "title": "The Texas Rangers",
+            "description": "Dark secrets, forbidden love, and a fight for justice in a society torn apart by its past.",
+            "keywords": [
+                "survival",
+                "journey",
+                "revenge"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt0044118.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.512Z",
+            "__v": 1,
+            "cast": [
+                "Chris Wilson",
+                "Sarah Williams",
+                "Michael Wilson"
+            ],
+            "director": "Jane Jones",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd7f0.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd7f4",
+            "title": "The Time in Between",
+            "description": "A comedy that explores the ups and downs of life, relationships, and finding oneself.",
+            "keywords": [
+                "love",
+                "action"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt1864750.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.513Z",
+            "__v": 1,
+            "cast": [
+                "Jane Moore",
+                "Michael Williams",
+                "Ava Williams"
+            ],
+            "director": "Emma Brown",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd7f4.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd80a",
+            "title": "The New Scooby-Doo Movies",
+            "description": "Magic, mischief, and a battle between light and darkness.",
+            "keywords": [
+                "adventure",
+                "action"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt0068112.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.537Z",
+            "__v": 1,
+            "cast": [
+                "Emma Brown",
+                "Ava Smith",
+                "Jane Davis"
+            ],
+            "director": "Chris Jones",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd80a.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd804",
+            "title": "Julia Stone: Unreal",
+            "description": "In a city full of mysteries, one detective finds clues that could change everything.",
+            "keywords": [
+                "betrayal",
+                "epic",
+                "suspense"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt13050598.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.535Z",
+            "__v": 1,
+            "cast": [
+                "Jane Davis",
+                "Chris Johnson",
+                "Ella Brown"
+            ],
+            "director": "John Moore",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd804.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd808",
+            "title": "When a Stranger Calls",
+            "description": "A riveting tale of survival, hope, and the indomitable human spirit.",
+            "keywords": [
+                "action",
+                "darkness",
+                "journey"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt0455857.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.536Z",
+            "__v": 1,
+            "cast": [
+                "John Brown",
+                "Ryan Miller",
+                "John Brown"
+            ],
+            "director": "Ryan Brown",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd808.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd820",
+            "title": "Once Upon a Time in Serbia",
+            "description": "A musical journey that will make you laugh, cry, and sing along.",
+            "keywords": [
+                "epic",
+                "revenge"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt12769412.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.565Z",
+            "__v": 1,
+            "cast": [
+                "Alex Miller",
+                "Michael Moore",
+                "Michael Smith"
+            ],
+            "director": "Emma Davis",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd820.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd82c",
+            "title": "Two Moments in Time",
+            "description": "A musical journey that will make you laugh, cry, and sing along.",
+            "keywords": [
+                "horror",
+                "magic",
+                "adventure"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt6624018.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.582Z",
+            "__v": 1,
+            "cast": [
+                "Ryan Johnson",
+                "Ella Miller",
+                "Chris Smith"
+            ],
+            "director": "Ryan Smith",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd82c.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd892",
+            "title": "Julia!",
+            "description": "A love story that transcends time and space, bound by destiny.",
+            "keywords": [
+                "action",
+                "sci-fi",
+                "suspense"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt13473646.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.687Z",
+            "__v": 1,
+            "cast": [
+                "Ryan Taylor",
+                "Jane Johnson",
+                "Ella Miller"
+            ],
+            "director": "Chris Miller",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd892.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd896",
+            "title": "Babysitter's Black Book",
+            "description": "A sci-fi adventure that challenges our very understanding of reality.",
+            "keywords": [
+                "love",
+                "sci-fi"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt4234734.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.689Z",
+            "__v": 1,
+            "cast": [
+                "John Johnson",
+                "Chris Williams",
+                "Michael Williams"
+            ],
+            "director": "Ryan Miller",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd896.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd8be",
+            "title": "Living in the Time of Dying",
+            "description": "A comedy that explores the ups and downs of life, relationships, and finding oneself.",
+            "keywords": [
+                "revenge",
+                "betrayal"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt18245392.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.745Z",
+            "__v": 1,
+            "cast": [
+                "Emma Davis",
+                "Ava Moore",
+                "Sarah Brown"
+            ],
+            "director": "Emma Smith",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd8be.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd8ca",
+            "title": "Love in the Time of March Madness",
+            "description": "A journey of love, laughter, and friendship; a tale that celebrates the spirit of humanity.",
+            "keywords": [
+                "drama",
+                "love"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt3186068.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.767Z",
+            "__v": 1,
+            "cast": [
+                "Ella Brown",
+                "Sarah Smith",
+                "Jane Davis"
+            ],
+            "director": "Ava Wilson",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd8ca.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd8ea",
+            "title": "Scooby-Doo & Batman: The Brave and the Bold",
+            "description": "In a city full of mysteries, one detective finds clues that could change everything.",
+            "keywords": [
+                "heroic",
+                "mystery",
+                "betrayal"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt7578566.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.813Z",
+            "__v": 1,
+            "cast": [
+                "Jane Johnson",
+                "Ella Davis",
+                "Emma Williams"
+            ],
+            "director": "Ava Jones",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd8ea.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd86c",
+            "title": "Julia Rose Marks",
+            "description": "A young prodigy challenges the boundaries of her society and embarks on a quest for the truth.",
+            "keywords": [
+                "magic",
+                "thriller"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt4598222.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.640Z",
+            "__v": 1,
+            "cast": [
+                "Ella Jones",
+                "Jane Moore",
+                "Chris Davis"
+            ],
+            "director": "John Brown",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd86c.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd8f0",
+            "title": "A Hitch in Time",
+            "description": "A thrilling chase, a deadly mystery, and a protagonist who won't give up.",
+            "keywords": [
+                "romance",
+                "suspense"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt0048172.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.821Z",
+            "__v": 1,
+            "cast": [
+                "Jane Smith",
+                "Chris Williams",
+                "Emma Moore"
+            ],
+            "director": "Ava Wilson",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd8f0.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd900",
+            "title": "God Was in the West, Too, at One Time",
+            "description": "In a city full of mysteries, one detective finds clues that could change everything.",
+            "keywords": [
+                "darkness",
+                "suspense"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt0062666.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.850Z",
+            "__v": 1,
+            "cast": [
+                "John Davis",
+                "Alex Wilson",
+                "Chris Davis"
+            ],
+            "director": "Chris Williams",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd900.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd912",
+            "title": "Once Upon a Time in Triad Society",
+            "description": "Facing insurmountable odds, a group of friends discover the true meaning of sacrifice.",
+            "keywords": [
+                "magic",
+                "betrayal",
+                "journey"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt0117242.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.870Z",
+            "__v": 1,
+            "cast": [
+                "Ryan Miller",
+                "Chris Davis",
+                "Chris Moore"
+            ],
+            "director": "Michael Smith",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd912.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd91a",
+            "title": "Julia",
+            "description": "An exploration of family, traditions, and the ties that bind us together.",
+            "keywords": [
+                "thriller",
+                "love"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt0062575.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.875Z",
+            "__v": 1,
+            "cast": [
+                "Ella Wilson",
+                "Ava Johnson",
+                "Ryan Smith"
+            ],
+            "director": "John Jones",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd91a.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd91e",
+            "title": "Ghost Fleet VR",
+            "description": "In the aftermath of a great war, a kingdom finds hope in the most unlikely of heroes.",
+            "keywords": [
+                "thriller",
+                "epic"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt9608950.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.880Z",
+            "__v": 1,
+            "cast": [
+                "Emma Jones",
+                "Michael Williams",
+                "Ava Williams"
+            ],
+            "director": "John Taylor",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd91e.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd92e",
+            "title": "Paper Jackets - 'Ghost of you'",
+            "description": "A young prodigy challenges the boundaries of her society and embarks on a quest for the truth.",
+            "keywords": [
+                "darkness",
+                "betrayal",
+                "heroic"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt11956768.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.907Z",
+            "__v": 1,
+            "cast": [
+                "Michael Taylor",
+                "Michael Williams",
+                "Sarah Johnson"
+            ],
+            "director": "Ryan Miller",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd92e.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd93a",
+            "title": "Ghost-Tosterone",
+            "description": "When dark forces threaten the realm, a band of misfits come together to save their world.",
+            "keywords": [
+                "journey",
+                "mystery"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt5451942.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.924Z",
+            "__v": 1,
+            "cast": [
+                "Jane Johnson",
+                "Ryan Brown",
+                "Alex Johnson"
+            ],
+            "director": "Sarah Williams",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd93a.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd97e",
+            "title": "The Old Ghost Diary",
+            "description": "A journey of love, laughter, and friendship; a tale that celebrates the spirit of humanity.",
+            "keywords": [
+                "romance",
+                "fantasy",
+                "thriller"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt15526142.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.994Z",
+            "__v": 1,
+            "cast": [
+                "Ava Miller",
+                "Chris Brown",
+                "Emma Williams"
+            ],
+            "director": "Michael Miller",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd97e.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd980",
+            "title": "Ghost Riders in the Sky",
+            "description": "A young prodigy challenges the boundaries of her society and embarks on a quest for the truth.",
+            "keywords": [
+                "heroic",
+                "survival"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt5430920.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.995Z",
+            "__v": 1,
+            "cast": [
+                "Jane Brown",
+                "Emma Smith",
+                "Ella Williams"
+            ],
+            "director": "Michael Brown",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd980.mp4"
+        },
+        {
+            "_id": "64cffee900bad552e8dcd990",
+            "title": "Once Upon a Time in Roma",
+            "description": "In a world where nothing is as it seems, a lone hero rises against the odds.",
+            "keywords": [
+                "comedy",
+                "sci-fi",
+                "magic"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt11107746.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:29.021Z",
+            "__v": 1,
+            "cast": [
+                "John Miller",
+                "Alex Johnson",
+                "Michael Wilson"
+            ],
+            "director": "Ella Moore",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee900bad552e8dcd990.mp4"
+        },
+        {
+            "_id": "64cffee900bad552e8dcd994",
+            "title": "The Ghost in the Air",
+            "description": "Facing insurmountable odds, a group of friends discover the true meaning of sacrifice.",
+            "keywords": [
+                "thriller",
+                "revenge"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt7752872.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:29.035Z",
+            "__v": 1,
+            "cast": [
+                "Chris Davis",
+                "Emma Miller",
+                "Alex Davis"
+            ],
+            "director": "Jane Brown",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee900bad552e8dcd994.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd8c6",
+            "title": "Scooby-Doo! Bagulhos Sinistros",
+            "description": "A riveting tale of survival, hope, and the indomitable human spirit.",
+            "keywords": [
+                "darkness",
+                "suspense",
+                "horror"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt20836330.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.763Z",
+            "__v": 1,
+            "cast": [
+                "Alex Davis",
+                "Emma Jones",
+                "Emma Moore"
+            ],
+            "director": "Ava Johnson",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd8c6.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd8d4",
+            "title": "Contagion",
+            "description": "A journey of love, laughter, and friendship; a tale that celebrates the spirit of humanity.",
+            "keywords": [
+                "survival",
+                "comedy"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt1598778.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.793Z",
+            "__v": 1,
+            "cast": [
+                "John Brown",
+                "Ryan Miller",
+                "Sarah Smith"
+            ],
+            "director": "John Brown",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd8d4.mp4"
+        },
+        {
+            "_id": "64cffee900bad552e8dcd9aa",
+            "title": "Ghost Light",
+            "description": "A comedy that explores the ups and downs of life, relationships, and finding oneself.",
+            "keywords": [
+                "thriller",
+                "comedy"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt10508548.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:29.063Z",
+            "__v": 1,
+            "cast": [
+                "John Moore",
+                "Emma Wilson",
+                "Jane Moore"
+            ],
+            "director": "Ava Williams",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee900bad552e8dcd9aa.mp4"
+        },
+        {
+            "_id": "64cffee900bad552e8dcd9a8",
+            "title": "Vivaldi's Spring in the Time of Covid-19",
+            "description": "Facing insurmountable odds, a group of friends discover the true meaning of sacrifice.",
+            "keywords": [
+                "heroic",
+                "action",
+                "journey"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt13585386.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:29.062Z",
+            "__v": 1,
+            "cast": [
+                "Ella Davis",
+                "Emma Jones",
+                "Ryan Williams"
+            ],
+            "director": "Ella Brown",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee900bad552e8dcd9a8.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd942",
+            "title": "A Writer of Ghost Stories",
+            "description": "A sci-fi adventure that challenges our very understanding of reality.",
+            "keywords": [
+                "romance",
+                "revenge"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt4332240.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.932Z",
+            "__v": 1,
+            "cast": [
+                "Michael Jones",
+                "Emma Smith",
+                "Jane Davis"
+            ],
+            "director": "Jane Davis",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd942.mp4"
+        },
+        {
+            "_id": "64cffee900bad552e8dcd9ce",
+            "title": "Ghost Car: The Sequel",
+            "description": "Facing insurmountable odds, a group of friends discover the true meaning of sacrifice.",
+            "keywords": [
+                "romance",
+                "thriller"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt5713520.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:29.102Z",
+            "__v": 1,
+            "cast": [
+                "Michael Moore",
+                "Sarah Davis",
+                "Alex Johnson"
+            ],
+            "director": "John Brown",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee900bad552e8dcd9ce.mp4"
+        },
+        {
+            "_id": "64cffee900bad552e8dcd9da",
+            "title": "Brandon & Julia",
+            "description": "Dark secrets, forbidden love, and a fight for justice in a society torn apart by its past.",
+            "keywords": [
+                "revenge",
+                "journey"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt7222218.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:29.121Z",
+            "__v": 1,
+            "cast": [
+                "Ava Brown",
+                "Michael Williams",
+                "Ella Wilson"
+            ],
+            "director": "Ava Davis",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee900bad552e8dcd9da.mp4"
+        },
+        {
+            "_id": "64cffee800bad552e8dcd96a",
+            "title": "Every Day the Same Dream.(ACID GHOST)",
+            "description": "A timeless story of dreams, ambition, and the challenges of a big city.",
+            "keywords": [
+                "suspense",
+                "darkness",
+                "action"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt6465254.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:28.966Z",
+            "__v": 1,
+            "cast": [
+                "Chris Davis",
+                "Michael Williams",
+                "Ryan Johnson"
+            ],
+            "director": "John Jones",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee800bad552e8dcd96a.mp4"
+        },
+        {
+            "_id": "64cffee900bad552e8dcd9e4",
+            "title": "Ghost Story",
+            "description": "Magic, mischief, and a battle between light and darkness.",
+            "keywords": [
+                "love",
+                "darkness",
+                "thriller"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt6476398.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:29.132Z",
+            "__v": 1,
+            "cast": [
+                "Ryan Brown",
+                "Michael Johnson",
+                "Jane Davis"
+            ],
+            "director": "Sarah Moore",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee900bad552e8dcd9e4.mp4"
+        },
+        {
+            "_id": "64cffee900bad552e8dcd9f0",
+            "title": "Just in Time",
+            "description": "A comedy that explores the ups and downs of life, relationships, and finding oneself.",
+            "keywords": [
+                "love",
+                "journey"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt0094489.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:29.143Z",
+            "__v": 1,
+            "cast": [
+                "Jane Davis",
+                "Ella Williams",
+                "Chris Davis"
+            ],
+            "director": "Ava Johnson",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee900bad552e8dcd9f0.mp4"
+        },
+        {
+            "_id": "64cffee900bad552e8dcd9fa",
+            "title": "Mon chéri Soviétique",
+            "description": "In the heart of the jungle, lies a secret that's waiting to be uncovered.",
+            "keywords": [
+                "survival",
+                "epic",
+                "sci-fi"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt23859344.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:29.157Z",
+            "__v": 1,
+            "cast": [
+                "Jane Johnson",
+                "Alex Davis",
+                "Chris Davis"
+            ],
+            "director": "Michael Johnson",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee900bad552e8dcd9fa.mp4"
+        },
+        {
+            "_id": "64cffee900bad552e8dcda06",
+            "title": "Scooby-Doo in Arabian Nights",
+            "description": "A love story that transcends time and space, bound by destiny.",
+            "keywords": [
+                "darkness",
+                "fantasy"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt0192578.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:29.178Z",
+            "__v": 1,
+            "cast": [
+                "Chris Smith",
+                "Alex Moore",
+                "Chris Wilson"
+            ],
+            "director": "Ella Wilson",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee900bad552e8dcda06.mp4"
+        },
+        {
+            "_id": "64cffee900bad552e8dcda28",
+            "title": "Just in Time",
+            "description": "A journey of love, laughter, and friendship; a tale that celebrates the spirit of humanity.",
+            "keywords": [
+                "horror",
+                "suspense",
+                "drama"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt8040952.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:29.206Z",
+            "__v": 1,
+            "cast": [
+                "Sarah Smith",
+                "Michael Taylor",
+                "John Jones"
+            ],
+            "director": "Sarah Williams",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee900bad552e8dcda28.mp4"
+        },
+        {
+            "_id": "64cffee900bad552e8dcda20",
+            "title": "Love in the Time of Quarantine",
+            "description": "A timeless story of dreams, ambition, and the challenges of a big city.",
+            "keywords": [
+                "epic",
+                "comedy"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt14176392.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:29.194Z",
+            "__v": 1,
+            "cast": [
+                "Chris Davis",
+                "Chris Miller",
+                "Ryan Williams"
+            ],
+            "director": "Michael Wilson",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee900bad552e8dcda20.mp4"
+        },
+        {
+            "_id": "64cffee900bad552e8dcda24",
+            "title": "Julia",
+            "description": "A young prodigy challenges the boundaries of her society and embarks on a quest for the truth.",
+            "keywords": [
+                "horror",
+                "romance",
+                "revenge"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt5687594.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:29.205Z",
+            "__v": 1,
+            "cast": [
+                "John Moore",
+                "Chris Williams",
+                "Michael Moore"
+            ],
+            "director": "Chris Smith",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee900bad552e8dcda24.mp4"
+        },
+        {
+            "_id": "64cffee900bad552e8dcda2c",
+            "title": "Cinderella Man",
+            "description": "In the aftermath of a great war, a kingdom finds hope in the most unlikely of heroes.",
+            "keywords": [
+                "revenge",
+                "adventure",
+                "drama"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt0352248.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:29.215Z",
+            "__v": 1,
+            "cast": [
+                "Ryan Brown",
+                "Emma Johnson",
+                "Michael Williams"
+            ],
+            "director": "Jane Davis",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee900bad552e8dcda2c.mp4"
+        },
+        {
+            "_id": "64cffee900bad552e8dcda48",
+            "title": "Julia Roberts - Vom Aschenputtel zum Superstar",
+            "description": "A musical journey that will make you laugh, cry, and sing along.",
+            "keywords": [
+                "sci-fi",
+                "adventure",
+                "journey"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt9691538.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:29.250Z",
+            "__v": 1,
+            "cast": [
+                "Jane Jones",
+                "Chris Davis",
+                "Emma Williams"
+            ],
+            "director": "Ava Johnson",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee900bad552e8dcda48.mp4"
+        },
+        {
+            "_id": "64cffee900bad552e8dcda68",
+            "title": "Stranger and the Fog",
+            "description": "When dark forces threaten the realm, a band of misfits come together to save their world.",
+            "keywords": [
+                "action",
+                "magic"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt0071549.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:29.301Z",
+            "__v": 1,
+            "cast": [
+                "Sarah Williams",
+                "Ryan Smith",
+                "Alex Davis"
+            ],
+            "director": "Michael Johnson",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee900bad552e8dcda68.mp4"
+        },
+        {
+            "_id": "64cffee900bad552e8dcda74",
+            "title": "Once Upon a Time in Cabramatta",
+            "description": "Journey through galaxies, as a crew faces challenges that test their limits and their bond.",
+            "keywords": [
+                "revenge",
+                "horror"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt2176707.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:29.318Z",
+            "__v": 1,
+            "cast": [
+                "Sarah Moore",
+                "Ryan Williams",
+                "John Williams"
+            ],
+            "director": "John Davis",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee900bad552e8dcda74.mp4"
+        },
+        {
+            "_id": "64cffee900bad552e8dcda76",
+            "title": "Dune",
+            "description": "Dark secrets, forbidden love, and a fight for justice in a society torn apart by its past.",
+            "keywords": [
+                "survival",
+                "magic",
+                "betrayal"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt0142032.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:29.328Z",
+            "__v": 1,
+            "cast": [
+                "John Moore",
+                "Jane Jones",
+                "Ava Williams"
+            ],
+            "director": "Alex Davis",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee900bad552e8dcda76.mp4"
+        },
+        {
+            "_id": "64cffee900bad552e8dcda6c",
+            "title": "Real Time with Bill Maher: 5 Minutes in America",
+            "description": "Facing insurmountable odds, a group of friends discover the true meaning of sacrifice.",
+            "keywords": [
+                "darkness",
+                "adventure",
+                "heroic"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt6673040.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:29.303Z",
+            "__v": 1,
+            "cast": [
+                "Emma Miller",
+                "Ryan Williams",
+                "Ava Moore"
+            ],
+            "director": "John Wilson",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee900bad552e8dcda6c.mp4"
+        },
+        {
+            "_id": "64cffee900bad552e8dcda70",
+            "title": "Julia Durant: Jung, blond, tot",
+            "description": "In a world where nothing is as it seems, a lone hero rises against the odds.",
+            "keywords": [
+                "betrayal",
+                "journey"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt8412830.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:29.307Z",
+            "__v": 1,
+            "cast": [
+                "Emma Miller",
+                "John Jones",
+                "Sarah Moore"
+            ],
+            "director": "Ava Moore",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee900bad552e8dcda70.mp4"
+        },
+        {
+            "_id": "64cffee900bad552e8dcda72",
+            "title": "Urban Exploration: Sad, Abandoned New Jersey Pilot's House Frozen in Time",
+            "description": "In the heart of the jungle, lies a secret that's waiting to be uncovered.",
+            "keywords": [
+                "love",
+                "sci-fi"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt9162744.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:29.308Z",
+            "__v": 1,
+            "cast": [
+                "John Davis",
+                "Michael Jones",
+                "Emma Miller"
+            ],
+            "director": "Ava Johnson",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee900bad552e8dcda72.mp4"
+        },
+        {
+            "_id": "64cffee900bad552e8dcda9a",
+            "title": "Once Upon a Time in Jamaica",
+            "description": "Journey through galaxies, as a crew faces challenges that test their limits and their bond.",
+            "keywords": [
+                "comedy",
+                "fantasy"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt4683892.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:29.398Z",
+            "__v": 1,
+            "cast": [
+                "Ella Wilson",
+                "Emma Miller",
+                "Chris Davis"
+            ],
+            "director": "Ella Taylor",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee900bad552e8dcda9a.mp4"
+        },
+        {
+            "_id": "64cffee900bad552e8dcdad2",
+            "title": "Burning Ghost",
+            "description": "In the heart of the jungle, lies a secret that's waiting to be uncovered.",
+            "keywords": [
+                "survival",
+                "sci-fi"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt10224624.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:29.486Z",
+            "__v": 1,
+            "cast": [
+                "Michael Williams",
+                "Alex Wilson",
+                "Ava Johnson"
+            ],
+            "director": "Michael Wilson",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee900bad552e8dcdad2.mp4"
+        },
+        {
+            "_id": "64cffee900bad552e8dcdadc",
+            "title": "La tía julia y el escribidor",
+            "description": "A sci-fi adventure that challenges our very understanding of reality.",
+            "keywords": [
+                "revenge",
+                "horror",
+                "darkness"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt9129440.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:29.489Z",
+            "__v": 1,
+            "cast": [
+                "Ava Johnson",
+                "Alex Moore",
+                "John Williams"
+            ],
+            "director": "Alex Davis",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee900bad552e8dcdadc.mp4"
+        },
+        {
+            "_id": "64cffee900bad552e8dcdade",
+            "title": "Maleficent: Mistress of Evil",
+            "description": "Journey through galaxies, as a crew faces challenges that test their limits and their bond.",
+            "keywords": [
+                "epic",
+                "drama"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt4777008.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:29.497Z",
+            "__v": 1,
+            "cast": [
+                "Michael Jones",
+                "Chris Davis",
+                "Jane Miller"
+            ],
+            "director": "Michael Wilson",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee900bad552e8dcdade.mp4"
+        },
+        {
+            "_id": "64cffee900bad552e8dcdaf8",
+            "title": "Little Black Book",
+            "description": "A young prodigy challenges the boundaries of her society and embarks on a quest for the truth.",
+            "keywords": [
+                "drama",
+                "betrayal"
+            ],
+            "thumbnail": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt0361841.jpg",
+            "type": "web series",
+            "createdAt": "2023-08-06T20:13:29.514Z",
+            "__v": 1,
+            "cast": [
+                "Emma Miller",
+                "Emma Davis",
+                "Ryan Williams"
+            ],
+            "director": "Emma Johnson",
+            "video_url": "https://newton-project-resume-backend.s3.amazonaws.com/video/64cffee900bad552e8dcdaf8.mp4"
+        }
+    ]
+}

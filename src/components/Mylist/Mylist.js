@@ -10,11 +10,6 @@ const Mylist = async() => {
             Authorization: `Bearer ${token}`,
           },
     })
-    console.log("mylist", response)
-    console.log("mylist1", response?.data)
-    console.log("mylist2", response?.data?.data)
-    console.log("mylist3", response?.data?.data?.shows)
-    console.log("mylist4", response?.data?.data?.shows.slice(-1)[0])
     console.log("mylist5", response?.data?.data?.shows.slice(-1)[0]?._id)
   return (
     <>
