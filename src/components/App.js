@@ -10,6 +10,7 @@ import Signup from './Login/Signup';
 import UpdatePassword from './Login/UpdatePassword';
 import Logout from './Login/Logout';
 import Mylist from './Mylist/Mylist';
+import Data from './AllData/Data';
 const App = () => {
 
   return (
@@ -23,6 +24,7 @@ const App = () => {
           <Route path='/updatePassword' element={<UpdatePassword/>}/>
           <Route path='/logout' element={<Logout/>}/>
           <Route path='/list' element={<Mylist/>}/>
+          <Route path='/data' element={<Data/>}/>
           <Route path='/video/:id' element={<Video/>}/>
         </Routes>
       </Router>
