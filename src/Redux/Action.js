@@ -81,6 +81,7 @@ export const login = (email, password) => async dispatch => {
   }
 };
 
+
 export const updatePassword = (name, email, passwordCurrent, newPassword) => async dispatch => {
   try {
     const storedUser = JSON.parse(localStorage.getItem('user'));

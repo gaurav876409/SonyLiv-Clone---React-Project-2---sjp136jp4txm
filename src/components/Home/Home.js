@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, { useEffect, useState } from 'react'
 import './Home.css'
 import { useRef } from 'react';
 import Autoplay from 'embla-carousel-autoplay';
@@ -11,11 +11,13 @@ import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { fetchShowDetails } from '../../Redux/Action';
+
+  
 const Home = () => {
     const dispatch = useDispatch();
     const projectId = 'sjp136jp4txm';
     useEffect(() => {
-      (fetchShowDetails(dispatch, projectId));
+        (fetchShowDetails(dispatch, projectId));
     }, []);
     const autoplay = useRef(Autoplay({ delay: 2000 }));
     const useStyles = createStyles(() => ({
@@ -46,7 +48,7 @@ const Home = () => {
     return (
         <>
             <Carousel
-                maw={320}
+                maw={1366}
                 mx="auto"
                 withIndicators
                 height={640}
@@ -56,7 +58,6 @@ const Home = () => {
                 onMouseLeave={autoplay.current.reset}
                 nextControlIcon={<IconArrowRight size={16} />}
                 previousControlIcon={<IconArrowLeft size={16} />}
-                style={{ maxWidth: "86rem" }}
             >
                 <Carousel.Slide>
                     <div className='slide'>
@@ -353,29 +354,30 @@ const Home = () => {
             <div className='movie_header'>
                 <h1>Movie</h1>
                 <Carousel
-                    height={400}
+                    height={220}
                     slideSize="10%"
                     slideGap="md"
                     loop
                     align="start"
                     slidesToScroll={5}
                 >
+
                     {movie?.map(item => (
                         <Carousel.Slide key={item._id}>
-                            <div key={item._id} className="thumbnail_item">
-                            <Link to={`/show/${item._id}`}>
-                                <img src={item.thumbnail} alt={item.title} />
+                            <div key={item._id} className='home_item'>
+                                <Link to={`/show/${item._id}`}>
+                                    <img src={item.thumbnail} alt={item.title} />
                                 </Link>
                             </div>
                         </Carousel.Slide>
                     ))}
                 </Carousel>
             </div>
-            <div className='home_big_image'><img src='https://images.slivcdn.com/videoasset_images/kbc_s15_set2_14aug_web.jpg?h=170&w=1259&q=high&fr=webp'/></div>
+            <div className='home_big_image'><img src='https://images.slivcdn.com/videoasset_images/kbc_s15_set2_14aug_web.jpg?h=170&w=1259&q=high&fr=webp' /></div>
             <div className='home_carousel'>
                 <h1>Video Song</h1>
                 <Carousel
-                    height={400}
+                    height={220}
                     slideSize="10%"
                     slideGap="md"
                     loop
@@ -384,20 +386,20 @@ const Home = () => {
                 >
                     {videoSong?.map(item => (
                         <Carousel.Slide key={item._id}>
-                            <div key={item._id} className="thumbnail_item">
+                            <div key={item._id} className='home_item'>
                                 <Link to={`/show/${item._id}`}>
-                                <img src={item.thumbnail} alt={item.title} />
+                                    <img src={item.thumbnail} alt={item.title} />
                                 </Link>
                             </div>
                         </Carousel.Slide>
                     ))}
                 </Carousel>
             </div>
-            <div className='home_big_image'><img src='https://images.slivcdn.com/videoasset_images/khul_ke_khelo_web.jpg?h=170&w=1259&q=high&fr=webp'/></div>
+            <div className='home_big_image'><img src='https://images.slivcdn.com/videoasset_images/khul_ke_khelo_web.jpg?h=170&w=1259&q=high&fr=webp' /></div>
             <div className='home_carousel'>
                 <h1>Documentry</h1>
                 <Carousel
-                    height={400}
+                    height={220}
                     slideSize="10%"
                     slideGap="md"
                     loop
@@ -406,20 +408,20 @@ const Home = () => {
                 >
                     {documentry?.map(item => (
                         <Carousel.Slide key={item._id}>
-                            <div key={item._id} className="thumbnail_item">
-                            <Link to={`/show/${item._id}`}>
-                                <img src={item.thumbnail} alt={item.title} />
+                            <div key={item._id} className='home_item'>
+                                <Link to={`/show/${item._id}`}>
+                                    <img src={item.thumbnail} alt={item.title} />
                                 </Link>
                             </div>
                         </Carousel.Slide>
                     ))}
                 </Carousel>
             </div>
-            <div className='home_big_image'><img src='https://images.slivcdn.com/videoasset_images/porthozhil_set5_hindimultilang_10aug_web.jpg?h=170&w=1259&q=high&fr=webp'/></div>
+            <div className='home_big_image'><img src='https://images.slivcdn.com/videoasset_images/porthozhil_set5_hindimultilang_10aug_web.jpg?h=170&w=1259&q=high&fr=webp' /></div>
             <div className='home_carousel'>
                 <h1>TV Show</h1>
                 <Carousel
-                    height={400}
+                    height={220}
                     slideSize="10%"
                     slideGap="md"
                     loop
@@ -428,20 +430,20 @@ const Home = () => {
                 >
                     {tvShow?.map(item => (
                         <Carousel.Slide key={item._id}>
-                            <div key={item._id} className="thumbnail_item">
-                            <Link to={`/show/${item._id}`}>
-                                <img src={item.thumbnail} alt={item.title} />
+                            <div key={item._id} className='home_item'>
+                                <Link to={`/show/${item._id}`}>
+                                    <img src={item.thumbnail} alt={item.title} />
                                 </Link>
                             </div>
                         </Carousel.Slide>
                     ))}
                 </Carousel>
             </div>
-            <div className='home_big_image'><img src='https://images.slivcdn.com/videoasset_images/jengaburu_hindi_multilang_web.jpg?h=170&w=1259&q=high&fr=webp'/></div>
+            <div className='home_big_image'><img src='https://images.slivcdn.com/videoasset_images/jengaburu_hindi_multilang_web.jpg?h=170&w=1259&q=high&fr=webp' /></div>
             <div className='home_carousel'>
                 <h1>Short Film</h1>
                 <Carousel
-                    height={400}
+                    height={220}
                     slideSize="10%"
                     slideGap="md"
                     loop
@@ -450,20 +452,20 @@ const Home = () => {
                 >
                     {shortFilm?.map(item => (
                         <Carousel.Slide key={item._id}>
-                            <div key={item._id} className="thumbnail_item">
-                            <Link to={`/show/${item._id}`}>
-                                <img src={item.thumbnail} alt={item.title} />
-                            </Link>
+                            <div key={item._id} className='home_item'>
+                                <Link to={`/show/${item._id}`}>
+                                    <img src={item.thumbnail} alt={item.title} />
+                                </Link>
                             </div>
                         </Carousel.Slide>
                     ))}
                 </Carousel>
             </div>
-            <div className='home_big_image'><img src='https://images.slivcdn.com/videoasset_images/parasite_korean_mulitalng_web.jpg?h=170&w=1259&q=high&fr=webp'/></div>
+            <div className='home_big_image'><img src='https://images.slivcdn.com/videoasset_images/parasite_korean_mulitalng_web.jpg?h=170&w=1259&q=high&fr=webp' /></div>
             <div className='home_carousel'>
                 <h1>Trailer</h1>
                 <Carousel
-                    height={400}
+                    height={220}
                     slideSize="10%"
                     slideGap="md"
                     loop
@@ -472,20 +474,20 @@ const Home = () => {
                 >
                     {trailer?.map(item => (
                         <Carousel.Slide key={item._id}>
-                            <div key={item._id} className="thumbnail_item">
-                            <Link to={`/show/${item._id}`}>
-                                <img src={item.thumbnail} alt={item.title} />
+                            <div key={item._id} className='home_item'>
+                                <Link to={`/show/${item._id}`}>
+                                    <img src={item.thumbnail} alt={item.title} />
                                 </Link>
                             </div>
                         </Carousel.Slide>
                     ))}
                 </Carousel>
             </div>
-            <div className='home_big_image'><img src='https://images.slivcdn.com/UI_icons/Multipurposecards/Cutout_Cards/Cutout_card_Survey_web.png?h=170&w=1259&q=high&fr=webp'/></div>
+            <div className='home_big_image'><img src='https://images.slivcdn.com/UI_icons/Multipurposecards/Cutout_Cards/Cutout_card_Survey_web.png?h=170&w=1259&q=high&fr=webp' /></div>
             <div className='home_carousel'>
                 <h1>Web Series</h1>
                 <Carousel
-                    height={400}
+                    height={220}
                     slideSize="10%"
                     slideGap="md"
                     loop
@@ -494,9 +496,9 @@ const Home = () => {
                 >
                     {webSeries?.map(item => (
                         <Carousel.Slide key={item._id}>
-                            <div key={item._id} className="thumbnail_item">
-                            <Link to={`/show/${item._id}`}>
-                                <img src={item.thumbnail} alt={item.title} />
+                            <div key={item._id} className='home_item'>
+                                <Link to={`/show/${item._id}`}>
+                                    <img src={item.thumbnail} alt={item.title} />
                                 </Link>
                             </div>
                         </Carousel.Slide>

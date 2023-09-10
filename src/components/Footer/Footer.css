@@ -1,0 +1,110 @@
+.footer_container{
+    width: 100%;
+    background-color: #111111;
+}
+.footer_body_list{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+}
+.footer_list{
+    width: 245px;
+    padding: 20px;
+}
+.footer_list span{
+    display: inline-block;
+    color: white;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.footer_list ul li{
+    list-style: none;
+    color: #aaaaaa;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.footer_body_social{
+    width: 100%;
+    display: flex;
+}
+.footer_body_social_1{
+    width: 53%;
+    padding: 45px 0px 45px 25px;
+}
+.footer_body_social_list{
+    margin-bottom: 30px;
+}
+.footer_body_social_list_data{
+    color: white;
+    font-size: 12px;
+    margin-right: 4px;
+}
+.footer_body_social_list_dot{
+    display: inline-block;
+    background-color: white;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    margin-right: 4px;
+    margin-bottom: 2px;
+}
+.footer_body_social_list_network{
+    color: #aaaaaa;
+    font-size: 12px;
+}
+.footer_body_social_2{
+    margin-top: 25px;
+    width: 25%;
+    padding: 45px 0px 45px 25px;
+    cursor: pointer;
+}
+.footer_body_social_3{
+    width: 22%;
+    padding: 45px 0px 45px 25px;
+}
+.footer_body_social_3 p{
+    color: white;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.footer_body_social_3 span{
+    width: 40px;
+    height: 35px;
+    background-color: #b4b4b4;
+    margin-right: 10px;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+    .footer_body_list{
+        justify-content: center;
+    }
+    .footer_body_social{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer_body_social_3{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .footer_body_social_2{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .footer_body_social_1{
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+}
