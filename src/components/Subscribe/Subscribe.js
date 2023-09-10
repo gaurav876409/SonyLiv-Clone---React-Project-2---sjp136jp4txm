@@ -6,10 +6,14 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { FaRupeeSign } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import Alert from '@mui/material/Alert';
+import Stack from '@mui/material/Stack';
+import Snackbar from '@mui/material/Snackbar';
 
 const Subscribe = () => {
   const showDetails = useSelector(state => state.showDetails.showDetails);
   const [selectedOption, setSelectedOption] = useState('599');
+  const [isAlertOpen, setIsAlertOpen] = useState(false);
   const settings = {
     dots: false,
     infinite: true,
@@ -24,7 +28,10 @@ const Subscribe = () => {
     setSelectedOption(price);
   };
   const handlePayButtonClick = () => {
-    alert('Payment successful!'); 
+    setIsAlertOpen(true);
+  };
+  const handleCloseAlert = () => {
+    setIsAlertOpen(false);
   };
   const userName = JSON.parse(localStorage.getItem('user'))
   return (
@@ -177,6 +184,13 @@ const Subscribe = () => {
             <li>FAQ</li>
           </ul>
         </div>
+        <Snackbar open={isAlertOpen} autoHideDuration={6000} onClose={handleCloseAlert}>
+        <Stack sx={{ width: '100%' }} spacing={2}>
+          <Alert severity="success" onClose={handleCloseAlert}>
+            Payment Successful!
+          </Alert>
+        </Stack>
+      </Snackbar>
       </div>
     </div>
   )

@@ -178,12 +178,12 @@ const Navbar = () => {
                                     <div className='profile_list_title'>My List</div>
                                 </div>
                             </Link>
-                            <Link to='/'>
+                            {/* <Link to='/'>
                                 <div className='profile_list'>
                                     <div className='profile_list_icon'><BiLogIn /></div>
                                     <div className='profile_list_title'>Login</div>
                                 </div>
-                            </Link>
+                            </Link> */}
                             <Link to='/updatePassword'>
                                 <div className='profile_list'>
                                     <div className='profile_list_icon'><MdSystemUpdateAlt /></div>

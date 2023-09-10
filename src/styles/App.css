@@ -2,4 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* min-width: 1366px; */
 }
+/* #main{
+    min-width: 1366px;
+} */

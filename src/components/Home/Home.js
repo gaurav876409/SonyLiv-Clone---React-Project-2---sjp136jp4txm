@@ -48,7 +48,7 @@ const Home = () => {
     return (
         <>
             <Carousel
-                maw={1366}
+                maw={'100vw'}
                 mx="auto"
                 withIndicators
                 height={640}
