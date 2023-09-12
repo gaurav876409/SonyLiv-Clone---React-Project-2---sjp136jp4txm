@@ -144,9 +144,25 @@
 .home_item:hover{
     transform: scale(1.1);
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 480px) {
     .slide_content {
         display: none;
     }
+    .slide img{
+        height: 300px;
+        width: 100%;
+    }
+    .mantine-xb9rs{
+        height: 300px !important;
+    }
 
+}
+@media screen and (min-width: 480px) and (max-width: 1024px){
+    .slide img{
+        height: 640px;
+        width: 100%;
+    }
+    .mantine-xb9rs{
+        height: 640px !important;
+    }
 }

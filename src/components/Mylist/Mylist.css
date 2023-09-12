@@ -1,6 +1,7 @@
 .mylist_container .mylist_body{
     width: 100%;
     background-color: #151515;
+    min-height: 50vh;
 }
 .mylist_container .mylist_body_content{
     display: flex;
