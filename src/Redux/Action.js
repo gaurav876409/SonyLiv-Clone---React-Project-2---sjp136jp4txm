@@ -10,11 +10,12 @@ export const UPDATE_PASSWORD_FAILURE = 'UPDATE_PASSWORD_FAILURE';
 export const LOGOUT = 'LOGOUT';
 export const ADD_WATCHLIST_SUCCESS = 'ADD_WATCHLIST_SUCCESS';
 export const ADD_WATCHLIST_FAILURE = 'ADD_WATCHLIST_FAILURE';
+// import { useNavigate } from 'react-router';
 
 
 export const fetchShowDetails =  async(dispatch, projectId) => {
   try {
-    const response = await axios.get('https://academics.newtonschool.co/api/v1/ott/show', {
+    const response = await axios.get('https://academics.newtonschool.co/api/v1/ott/show?page=2&limit=100', {
       headers: {
         projectId: projectId,
       }
@@ -49,6 +50,9 @@ export const signup = (name, email, password) => async dispatch => {
       type: 'SIGNUP_SUCCESS', 
       payload: response.data,
     });
+    // if (response.data?.status === 'success') {
+    //   navigate('/')
+    // }
   } catch (error) {
     dispatch({
       type: 'SIGNUP_FAILURE', 
@@ -127,6 +131,7 @@ export const addToWatchlist = (showId) => async (dispatch) => {
     const response = await axios.patch(
       // `https://academics.newtonschool.co/api/v1/social_media/watchlist/${showId}`,
       `https://academics.newtonschool.co/api/v1/social_media/watchlist`,
+      // `https://academics.newtonschool.co/api/v1/ott/watchlist/like`,
       { showId }, // Pass the showId in the request body
       {
         headers: {

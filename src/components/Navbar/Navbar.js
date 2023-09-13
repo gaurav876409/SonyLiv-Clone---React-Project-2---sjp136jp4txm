@@ -19,7 +19,7 @@ const Navbar = () => {
     const [result, setResult] = useState([]);
 
     const fetchData = async (value) => {
-        const response = await fetch(`https://academics.newtonschool.co/api/v1/ott/show?filter={"title" : "${value}"}`, {
+        const response = await fetch(`https://academics.newtonschool.co/api/v1/ott/show?filter={"title" : "${value}"}&limit=100`, {
             headers: {
                 projectId: 'sjp136jp4txm',
             }
@@ -63,7 +63,7 @@ const Navbar = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get(`https://academics.newtonschool.co/api/v1/ott/show?filter={"type" : "${activeCategory}"}`, {
+                const response = await axios.get(`https://academics.newtonschool.co/api/v1/ott/show?filter={"type" : "${activeCategory}"}&limit=100`, {
                     headers: {
                         projectId: 'sjp136jp4txm',
                     },

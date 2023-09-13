@@ -16,7 +16,7 @@ const initialState = {
 
 const UserReducer = (state = initialState, action) => {
     switch(action.type){
-        case SIGNUP_SUCCESS:
+    case SIGNUP_SUCCESS:
     case LOGIN_SUCCESS:
     case UPDATE_PASSWORD_SUCCESS:
       return {

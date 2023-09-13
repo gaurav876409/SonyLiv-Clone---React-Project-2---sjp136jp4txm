@@ -2,6 +2,9 @@ import React, { useState } from 'react'
 import { useDispatch } from 'react-redux';
 import { updatePassword } from '../../Redux/Action';
 import { useNavigate } from 'react-router';
+import Alert from '@mui/material/Alert';
+import Stack from '@mui/material/Stack';
+import Snackbar from '@mui/material/Snackbar';
 
 const UpdatePassword = () => {
   const navigate = useNavigate();
@@ -10,10 +13,15 @@ const UpdatePassword = () => {
   const [email, setEmail] = useState('');
   const [currentPassword, setCurrentPassword] = useState('');
   const [newPassword, setNewPassword] = useState('');
+  const [isAlertOpen, setIsAlertOpen] = useState(false);
 
   const handleUpdatePassword = () => {
     dispatch(updatePassword(name, email, currentPassword, newPassword));
-    navigate('/');
+    setIsAlertOpen(true);
+    navigate('/home');
+  };
+  const handleCloseAlert = () => {
+    setIsAlertOpen(false);
   };
   return (
     <div className='login_container'>
@@ -45,6 +53,13 @@ const UpdatePassword = () => {
           <button onClick={handleUpdatePassword}>Update Password</button>
         </div>
       </div>
+      <Snackbar open={isAlertOpen} autoHideDuration={6000} onClose={handleCloseAlert}>
+        <Stack sx={{ width: '100%' }} spacing={2}>
+          <Alert severity="success" onClose={handleCloseAlert}>
+            Signup Successful!
+          </Alert>
+        </Stack>
+      </Snackbar>
     </div>
   )
 }
