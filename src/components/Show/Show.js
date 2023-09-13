@@ -14,7 +14,7 @@ import { Carousel } from '@mantine/carousel';
 import { Link } from 'react-router-dom';
 import { IoIosArrowForward } from 'react-icons/io'
 import { useDispatch } from 'react-redux';
-import { addToWatchlist, removeFromWatchlist } from '../../Redux/Action';
+import { addToWatchlist } from '../../Redux/Action';
 import axios from 'axios';
 import Modal from 'react-modal';
 import { useMediaQuery } from 'react-responsive';
@@ -172,7 +172,6 @@ const Show = () => {
           {isToggled ? <span><FiCheck style={{ width: "23px", height: "23px", fontWeight: "700" }} /></span> : <span><BsPlusLg style={{ width: "23px", height: "23px", fontWeight: "700" }} /></span>}
           <span>My List</span>
         </button>
-
         <button className='show_body_share' onClick={openModal}>
           <span><PiShareFat style={{ width: "23px", height: "23px" }} /></span>
           <span>Share</span>

@@ -19,7 +19,7 @@ const Navbar = () => {
     const [result, setResult] = useState([]);
 
     const fetchData = async (value) => {
-        const response = await fetch(`https://academics.newtonschool.co/api/v1/ott/show?filter={"title" : "${value}"}&limit=100`, {
+        const response = await fetch(`https://academics.newtonschool.co/api/v1/ott/show?filter={"title" : "${value}"}&limit=1000`, {
             headers: {
                 projectId: 'sjp136jp4txm',
             }

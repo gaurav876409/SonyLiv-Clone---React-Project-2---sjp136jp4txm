@@ -11,8 +11,11 @@ import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { fetchShowDetails } from '../../Redux/Action';
+import Alert from '@mui/material/Alert';
+import Stack from '@mui/material/Stack';
+import Snackbar from '@mui/material/Snackbar';
 
-  
+
 const Home = () => {
     const dispatch = useDispatch();
     const projectId = 'sjp136jp4txm';
@@ -35,7 +38,20 @@ const Home = () => {
         },
     }));
     const { classes } = useStyles();
-
+    const [isAlertOpen, setIsAlertOpen] = useState(false);
+    const [isAlertOpen1, setIsAlertOpen1] = useState(false);
+    const handlePayButtonClick = () => {
+        setIsAlertOpen(true);
+    };
+    const handleCloseAlert = () => {
+        setIsAlertOpen(false);
+    };
+    const handlePayClick = () => {
+        setIsAlertOpen1(true);
+    };
+    const handleClose1Alert = () => {
+        setIsAlertOpen1(false);
+    };
     const showDetails = useSelector(state => state.showDetails.showDetails);
     const error = useSelector(state => state.showDetails.error);
     const movie = showDetails?.data?.filter(item => item.type === 'movie');
@@ -47,6 +63,20 @@ const Home = () => {
     const webSeries = showDetails?.data?.filter(item => item.type === 'web series');
     return (
         <>
+            <Snackbar open={isAlertOpen} autoHideDuration={6000} onClose={handleCloseAlert}>
+                <Stack sx={{ width: '100%' }} spacing={2}>
+                    <Alert severity="success" onClose={handleCloseAlert}>
+                        Add To My List Successful!
+                    </Alert>
+                </Stack>
+            </Snackbar>
+            <Snackbar open={isAlertOpen1} autoHideDuration={6000} onClose={handleClose1Alert}>
+                <Stack sx={{ width: '100%' }} spacing={2}>
+                    <Alert severity="success" onClose={handleClose1Alert}>
+                        URL Copy Successful!
+                    </Alert>
+                </Stack>
+            </Snackbar>
             <Carousel
                 maw={'100vw'}
                 mx="auto"
@@ -73,14 +103,16 @@ const Home = () => {
                                 <span className='slide_content_text_type'>2023</span>
                             </div>
                             <div className='slide_content_button'>
-                                <div className='slide_content_add'>
+                                <div className='slide_content_add' onClick={handlePayButtonClick}>
                                     <RxPlus className='slide_content_add_plus' />
                                     <p>Add to My List</p>
                                 </div>
+                                <Link to={`/video/${'64cffee700bad552e8dcd515'}`}>
                                 <div className='slide_content_play'>
                                     <button>Play Now</button>
                                 </div>
-                                <div className='slide_content_share'>
+                                </Link>
+                                <div className='slide_content_share' onClick={handlePayClick}>
                                     <PiShareFat className='slide_content_share_sign' />
                                     <p>Share</p>
                                 </div>
@@ -102,14 +134,16 @@ const Home = () => {
                                 <span className='slide_content_text_type'>2023</span>
                             </div>
                             <div className='slide_content_button'>
-                                <div className='slide_content_add'>
+                                <div className='slide_content_add' onClick={handlePayButtonClick}>
                                     <RxPlus className='slide_content_add_plus' />
                                     <p>Add to My List</p>
                                 </div>
+                                <Link to={`/video/${'64cffee700bad552e8dcd515'}`}>
                                 <div className='slide_content_play'>
                                     <button>Play Now</button>
                                 </div>
-                                <div className='slide_content_share'>
+                                </Link>
+                                <div className='slide_content_share' onClick={handlePayClick}>
                                     <PiShareFat className='slide_content_share_sign' />
                                     <p>Share</p>
                                 </div>
@@ -131,14 +165,16 @@ const Home = () => {
                                 <span className='slide_content_text_type'>2023</span>
                             </div>
                             <div className='slide_content_button'>
-                                <div className='slide_content_add'>
+                                <div className='slide_content_add' onClick={handlePayButtonClick}>
                                     <RxPlus className='slide_content_add_plus' />
                                     <p>Add to My List</p>
                                 </div>
+                                <Link to={`/video/${'64cffee700bad552e8dcd515'}`}>
                                 <div className='slide_content_play'>
                                     <button>Play Now</button>
                                 </div>
-                                <div className='slide_content_share'>
+                                </Link>
+                                <div className='slide_content_share' onClick={handlePayClick}>
                                     <PiShareFat className='slide_content_share_sign' />
                                     <p>Share</p>
                                 </div>
@@ -160,14 +196,16 @@ const Home = () => {
                                 <span className='slide_content_text_type'>2023</span>
                             </div>
                             <div className='slide_content_button'>
-                                <div className='slide_content_add'>
+                                <div className='slide_content_add' onClick={handlePayButtonClick}>
                                     <RxPlus className='slide_content_add_plus' />
                                     <p>Add to My List</p>
                                 </div>
+                                <Link to={`/video/${'64cffee700bad552e8dcd515'}`}>
                                 <div className='slide_content_play'>
                                     <button>Play Now</button>
                                 </div>
-                                <div className='slide_content_share'>
+                                </Link>
+                                <div className='slide_content_share' onClick={handlePayClick}>
                                     <PiShareFat className='slide_content_share_sign' />
                                     <p>Share</p>
                                 </div>
@@ -189,14 +227,16 @@ const Home = () => {
                                 <span className='slide_content_text_type'>2023</span>
                             </div>
                             <div className='slide_content_button'>
-                                <div className='slide_content_add'>
+                                <div className='slide_content_add' onClick={handlePayButtonClick}>
                                     <RxPlus className='slide_content_add_plus' />
                                     <p>Add to My List</p>
                                 </div>
+                                <Link to={`/video/${'64cffee700bad552e8dcd515'}`}>
                                 <div className='slide_content_play'>
                                     <button>Play Now</button>
                                 </div>
-                                <div className='slide_content_share'>
+                                </Link>
+                                <div className='slide_content_share' onClick={handlePayClick}>
                                     <PiShareFat className='slide_content_share_sign' />
                                     <p>Share</p>
                                 </div>
@@ -218,14 +258,16 @@ const Home = () => {
                                 <span className='slide_content_text_type'>2023</span>
                             </div>
                             <div className='slide_content_button'>
-                                <div className='slide_content_add'>
+                                <div className='slide_content_add' onClick={handlePayButtonClick}>
                                     <RxPlus className='slide_content_add_plus' />
                                     <p>Add to My List</p>
                                 </div>
+                                <Link to={`/video/${'64cffee700bad552e8dcd515'}`}>
                                 <div className='slide_content_play'>
                                     <button>Play Now</button>
                                 </div>
-                                <div className='slide_content_share'>
+                                </Link>
+                                <div className='slide_content_share' onClick={handlePayClick}>
                                     <PiShareFat className='slide_content_share_sign' />
                                     <p>Share</p>
                                 </div>
@@ -247,14 +289,16 @@ const Home = () => {
                                 <span className='slide_content_text_type'>2023</span>
                             </div>
                             <div className='slide_content_button'>
-                                <div className='slide_content_add'>
+                                <div className='slide_content_add' onClick={handlePayButtonClick}>
                                     <RxPlus className='slide_content_add_plus' />
                                     <p>Add to My List</p>
                                 </div>
+                                <Link to={`/video/${'64cffee700bad552e8dcd515'}`}>
                                 <div className='slide_content_play'>
                                     <button>Play Now</button>
                                 </div>
-                                <div className='slide_content_share'>
+                                </Link>
+                                <div className='slide_content_share' onClick={handlePayClick}>
                                     <PiShareFat className='slide_content_share_sign' />
                                     <p>Share</p>
                                 </div>
@@ -276,14 +320,16 @@ const Home = () => {
                                 <span className='slide_content_text_type'>2023</span>
                             </div>
                             <div className='slide_content_button'>
-                                <div className='slide_content_add'>
+                                <div className='slide_content_add' onClick={handlePayButtonClick}>
                                     <RxPlus className='slide_content_add_plus' />
                                     <p>Add to My List</p>
                                 </div>
+                                <Link to={`/video/${'64cffee700bad552e8dcd515'}`}>
                                 <div className='slide_content_play'>
                                     <button>Play Now</button>
                                 </div>
-                                <div className='slide_content_share'>
+                                </Link>
+                                <div className='slide_content_share' onClick={handlePayClick}>
                                     <PiShareFat className='slide_content_share_sign' />
                                     <p>Share</p>
                                 </div>
@@ -305,14 +351,16 @@ const Home = () => {
                                 <span className='slide_content_text_type'>2023</span>
                             </div>
                             <div className='slide_content_button'>
-                                <div className='slide_content_add'>
+                                <div className='slide_content_add' onClick={handlePayButtonClick}>
                                     <RxPlus className='slide_content_add_plus' />
                                     <p>Add to My List</p>
                                 </div>
+                                <Link to={`/video/${'64cffee700bad552e8dcd515'}`}>
                                 <div className='slide_content_play'>
                                     <button>Play Now</button>
                                 </div>
-                                <div className='slide_content_share'>
+                                </Link>
+                                <div className='slide_content_share' onClick={handlePayClick}>
                                     <PiShareFat className='slide_content_share_sign' />
                                     <p>Share</p>
                                 </div>
@@ -334,14 +382,16 @@ const Home = () => {
                                 <span className='slide_content_text_type'>2023</span>
                             </div>
                             <div className='slide_content_button'>
-                                <div className='slide_content_add'>
+                                <div className='slide_content_add' onClick={handlePayButtonClick}>
                                     <RxPlus className='slide_content_add_plus' />
                                     <p>Add to My List</p>
                                 </div>
+                                <Link to={`/video/${'64cffee700bad552e8dcd515'}`}>
                                 <div className='slide_content_play'>
                                     <button>Play Now</button>
                                 </div>
-                                <div className='slide_content_share'>
+                                </Link>
+                                <div className='slide_content_share' onClick={handlePayClick}>
                                     <PiShareFat className='slide_content_share_sign' />
                                     <p>Share</p>
                                 </div>
