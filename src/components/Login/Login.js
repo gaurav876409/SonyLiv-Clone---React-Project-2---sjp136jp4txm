@@ -15,12 +15,11 @@ const Login = () => {
     dispatch(login(email, password));
   };
 
-  const user = useSelector(state => state.user.user);
-  if (user && user.token) {
-    localStorage.setItem('user', JSON.stringify(user));
+  const sign_in_user = useSelector(state => state.user.signinUser);
+  if (sign_in_user && sign_in_user.token) {
+    localStorage.setItem('sign_in_user', JSON.stringify(sign_in_user));
     navigate('/home')
   }
-  console.log("line 18", user?.status)
 
   return (
     <div className='login_container'>

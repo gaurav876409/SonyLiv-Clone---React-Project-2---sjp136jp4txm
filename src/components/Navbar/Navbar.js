@@ -13,7 +13,8 @@ import { Modal } from '@mantine/core';
 import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
-    const userName = JSON.parse(localStorage.getItem('user'))
+    const userName1 = JSON.parse(localStorage.getItem('sign_up_user'))
+    const userName2 = JSON.parse(localStorage.getItem('sign_in_user'))
     const navigate = useNavigate();
     const [input, setInput] = useState("");
     const [result, setResult] = useState([]);
@@ -163,7 +164,11 @@ const Navbar = () => {
                     <div className='profile_hover'>
                         <div className='profile_detail'>
                             <div className='profile_image'><img src='https://images.slivcdn.com/UI_icons/Multiprofile/profile-00.png?w=132&q=high&fr=webp' /></div>
-                            <div className='profile_name'>{userName.data.name}</div>
+                            {userName1 ? (
+                                <div className='profile_name'>{userName1.data.user?.name}</div>
+                            ) : userName2 ? (
+                                <div className='profile_name'>{userName2.data?.name}</div>
+                            ) : null}
                         </div>
                         <div className='profile_lists'>
                             <Link to='/subscribe'>

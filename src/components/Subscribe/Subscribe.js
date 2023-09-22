@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState, useEffect } from 'react';
 import './Subscribe.css';
 import { useSelector } from 'react-redux';
 import Slider from 'react-slick';
@@ -9,11 +9,28 @@ import { Link } from 'react-router-dom';
 import Alert from '@mui/material/Alert';
 import Stack from '@mui/material/Stack';
 import Snackbar from '@mui/material/Snackbar';
+import Box from '@mui/material/Box';
+import Modal from '@mui/material/Modal';
+const style = {
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: 400,
+  bgcolor: 'background.paper',
+  border: '2px solid #000',
+  boxShadow: 24,
+  p: 4,
+};
 
 const Subscribe = () => {
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
   const showDetails = useSelector(state => state.showDetails.showDetails);
   const [selectedOption, setSelectedOption] = useState('599');
   const [isAlertOpen, setIsAlertOpen] = useState(false);
+  const [subscriptionStatus, setSubscriptionStatus] = useState(null);
   const settings = {
     dots: false,
     infinite: true,
@@ -24,16 +41,29 @@ const Subscribe = () => {
     autoplaySpeed: 0,
     cssEase: 'linear',
   };
+  useEffect(() => {
+    const savedSubscriptionStatus = localStorage.getItem('subscriptionStatus');
+    if (savedSubscriptionStatus) {
+      setSubscriptionStatus(savedSubscriptionStatus);
+    }
+  }, []);
   const handleOptionChange = (price) => {
     setSelectedOption(price);
+    setSubscriptionStatus(null);
   };
   const handlePayButtonClick = () => {
-    setIsAlertOpen(true);
+    if (subscriptionStatus !== selectedOption) {
+      setIsAlertOpen(true);
+      setSubscriptionStatus(selectedOption);
+      localStorage.setItem('subscriptionStatus', selectedOption);
+    }
+    handleClose();
   };
   const handleCloseAlert = () => {
     setIsAlertOpen(false);
   };
-  const userName = JSON.parse(localStorage.getItem('user'))
+  const userName1 = JSON.parse(localStorage.getItem('sign_up_user'))
+  const userName2 = JSON.parse(localStorage.getItem('sign_in_user'))
   return (
     <div className='subscribe_container'>
       <Slider {...settings}>
@@ -47,9 +77,15 @@ const Subscribe = () => {
       <div className='subscribe_container_body'>
         <div className='subscribe_header'>
           <Link to='/home'>
-          <div className='subscribe_header_logo'><img src='https://images.slivcdn.com/UI_icons/New_Final_Icons_30052020/liv_icon.png?q=high&fr=webp' /></div>
+            <div className='subscribe_header_logo'><img src='https://images.slivcdn.com/UI_icons/New_Final_Icons_30052020/liv_icon.png?q=high&fr=webp' /></div>
           </Link>
-          <div className='subscribe_header_name'>{userName.data.name}</div>
+          <div className='subscribe_header_name'>
+            {userName1 ? (
+              <div className='profile_name'>{userName1.data.user?.name}</div>
+            ) : userName2 ? (
+              <div className='profile_name'>{userName2.data?.name}</div>
+            ) : null}
+          </div>
         </div>
         <div className='subscribe_table_body'>
           <h1 className='subscribe_table_title'>Subscribe to watch all content on Sony LIV</h1>
@@ -66,7 +102,7 @@ const Subscribe = () => {
                   <th className={selectedOption === '599' ? 'selected_th' : ''}>
                     <div className='subscribe_table_head'>
                       <div><input type='radio' style={{ width: '16px', height: '16px', marginBottom: '5px' }} onChange={() => handleOptionChange('599')}
-                    checked={selectedOption === '599'}/></div>
+                        checked={selectedOption === '599'} /></div>
                       <div style={{ fontSize: '14px', fontWeight: '500', marginBottom: '5px' }} className={selectedOption === '599' ? 'selected_th' : ''}>Mobile Only</div>
                       <div>
                         <span className={selectedOption === '599' ? 'selected_th' : 'un_selected'}><FaRupeeSign style={{ fontSize: '14px' }} />599</span>
@@ -77,7 +113,7 @@ const Subscribe = () => {
                   <th className={selectedOption === '999' ? 'selected_th' : ''}>
                     <div className='subscribe_table_head'>
                       <div><input type='radio' style={{ width: '16px', height: '16px', marginBottom: '5px' }} onChange={() => handleOptionChange('999')}
-                    checked={selectedOption === '999'}/></div>
+                        checked={selectedOption === '999'} /></div>
                       <div style={{ fontSize: '14px', fontWeight: '500', marginBottom: '5px' }}>LIV Premium</div>
                       <div>
                         <span className={selectedOption === '999' ? 'selected_th' : 'un_selected'}><FaRupeeSign style={{ fontSize: '14px' }} />999</span>
@@ -88,7 +124,7 @@ const Subscribe = () => {
                   <th className={selectedOption === '699' ? 'selected_th' : ''}>
                     <div className='subscribe_table_head'>
                       <div><input type='radio' style={{ width: '16px', height: '16px', marginBottom: '5px' }} onChange={() => handleOptionChange('699')}
-                    checked={selectedOption === '699'}/></div>
+                        checked={selectedOption === '699'} /></div>
                       <div style={{ fontSize: '14px', fontWeight: '500', marginBottom: '5px' }}>LIV Premium</div>
                       <div>
                         <span className={selectedOption === '699' ? 'selected_th' : 'un_selected'}><FaRupeeSign style={{ fontSize: '14px' }} />699</span>
@@ -99,7 +135,7 @@ const Subscribe = () => {
                   <th className={selectedOption === '299' ? 'selected_th' : ''}>
                     <div className='subscribe_table_head'>
                       <div><input type='radio' style={{ width: '16px', height: '16px', marginBottom: '5px' }} onChange={() => handleOptionChange('299')}
-                    checked={selectedOption === '299'}/></div>
+                        checked={selectedOption === '299'} /></div>
                       <div style={{ fontSize: '14px', fontWeight: '500', marginBottom: '5px' }}>LIV Premium</div>
                       <div>
                         <span className={selectedOption === '299' ? 'selected_th' : 'un_selected'}><FaRupeeSign style={{ fontSize: '14px' }} />299</span>
@@ -175,8 +211,23 @@ const Subscribe = () => {
           </div>
         </div>
         <div className='subscribe_button'>
-          <button onClick={handlePayButtonClick}>Pay <FaRupeeSign style={{ fontSize: '14px', marginTop: '5px' }}/>{selectedOption}</button>
+          {/* <button onClick={handlePayButtonClick}>Pay <FaRupeeSign style={{ fontSize: '14px', marginTop: '5px' }} />{selectedOption}</button> */}
+          <button onClick={handleOpen}>Pay <FaRupeeSign style={{ fontSize: '14px', marginTop: '5px' }} />{selectedOption}</button>
         </div>
+        <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box sx={style}>
+          <div className='subscribe_modal'>
+            <h1>Enter UPI ID</h1>
+            <input type='text' placeholder='upi id...'/>
+            <button onClick={handlePayButtonClick}>Confirm and Pay</button>
+          </div>
+        </Box>
+      </Modal>
         <div className='subscribe_list'>
           <ul>
             <li>Terms and Conditions<span className='subscribe_list_dot'></span></li>
@@ -184,13 +235,20 @@ const Subscribe = () => {
             <li>FAQ</li>
           </ul>
         </div>
+        <div className='subscribe_status'>
+        {subscriptionStatus ? (
+          <div>
+            <p>You are subscribed to: {subscriptionStatus} plan</p>
+          </div>
+        ) : null}
+      </div>
         <Snackbar open={isAlertOpen} autoHideDuration={6000} onClose={handleCloseAlert}>
-        <Stack sx={{ width: '100%' }} spacing={2}>
-          <Alert severity="success" onClose={handleCloseAlert}>
-            Payment Successful!
-          </Alert>
-        </Stack>
-      </Snackbar>
+          <Stack sx={{ width: '100%' }} spacing={2}>
+            <Alert severity="success" onClose={handleCloseAlert}>
+              Payment Successful!
+            </Alert>
+          </Stack>
+        </Snackbar>
       </div>
     </div>
   )

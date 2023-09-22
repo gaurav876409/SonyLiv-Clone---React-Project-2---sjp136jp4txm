@@ -22,12 +22,12 @@ export const fetchShowDetails =  async(dispatch, projectId) => {
     });
 
     dispatch({
-      type: 'FETCH_SHOW_DETAILS_SUCCESS', 
+      type: FETCH_SHOW_DETAILS_SUCCESS, 
       payload: response.data,
     });
   } catch (error) {
     dispatch({
-      type: 'FETCH_SHOW_DETAILS_FAILURE', 
+      type: FETCH_SHOW_DETAILS_FAILURE, 
       payload: error,
     });
   }
@@ -45,17 +45,13 @@ export const signup = (name, email, password) => async dispatch => {
         projectId: 'sjp136jp4txm',
       },
     });
-
     dispatch({
-      type: 'SIGNUP_SUCCESS', 
+      type: SIGNUP_SUCCESS, 
       payload: response.data,
     });
-    // if (response.data?.status === 'success') {
-    //   navigate('/')
-    // }
   } catch (error) {
     dispatch({
-      type: 'SIGNUP_FAILURE', 
+      type: SIGNUP_FAILURE, 
       payload: error,
     });
   }
@@ -74,12 +70,12 @@ export const login = (email, password) => async dispatch => {
     });
 
     dispatch({
-      type: 'LOGIN_SUCCESS', 
+      type: LOGIN_SUCCESS, 
       payload: response.data,
     });
   } catch (error) {
     dispatch({
-      type: 'LOGIN_FAILURE', 
+      type: LOGIN_FAILURE, 
       payload: error,
     });
   }
@@ -104,12 +100,12 @@ export const updatePassword = (name, email, passwordCurrent, newPassword) => asy
     });
 
     dispatch({
-      type: 'UPDATE_PASSWORD_SUCCESS', 
+      type: UPDATE_PASSWORD_SUCCESS, 
       payload: response.data,
     });
   } catch (error) {
     dispatch({
-      type: 'UPDATE_PASSWORD_FAILURE', 
+      type: UPDATE_PASSWORD_FAILURE, 
       payload: error,
     });
   }
@@ -117,7 +113,7 @@ export const updatePassword = (name, email, passwordCurrent, newPassword) => asy
 
 export const logout = () => {
   return {
-    type: 'LOGOUT',
+    type: LOGOUT,
   };
 };
 
@@ -143,14 +139,14 @@ export const addToWatchlist = (showId) => async (dispatch) => {
     console.log("line 137", response.data)
     if(response){
       dispatch({
-        type: 'ADD_WATCHLIST_SUCCESS',
+        type: ADD_WATCHLIST_SUCCESS,
         payload: response.data,
       });
     }
   } catch (error) {
     console.log("error", error)
     dispatch({
-      type: 'ADD_WATCHLIST_FAILURE',
+      type: ADD_WATCHLIST_FAILURE,
       payload: error,
     });
   }
