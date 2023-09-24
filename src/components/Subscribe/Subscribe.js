@@ -25,11 +25,14 @@ const style = {
 
 const Subscribe = () => {
   const [open, setOpen] = React.useState(false);
+  const [upiId, setUpiId] = React.useState(''); 
+  const [isInputFilled, setIsInputFilled] = useState(false); 
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   const showDetails = useSelector(state => state.showDetails.showDetails);
   const [selectedOption, setSelectedOption] = useState('599');
-  const [isAlertOpen, setIsAlertOpen] = useState(false);
+  const [isAlertOpen1, setIsAlertOpen1] = useState(false);
+  const [isAlertOpen2, setIsAlertOpen2] = useState(false);
   const [subscriptionStatus, setSubscriptionStatus] = useState(null);
   const settings = {
     dots: false,
@@ -51,16 +54,28 @@ const Subscribe = () => {
     setSelectedOption(price);
     setSubscriptionStatus(null);
   };
+  const handleInputChange = (event) => {
+    const { value } = event.target;
+    setUpiId(value); 
+    setIsInputFilled(value !== ''); 
+  };
   const handlePayButtonClick = () => {
     if (subscriptionStatus !== selectedOption) {
-      setIsAlertOpen(true);
-      setSubscriptionStatus(selectedOption);
-      localStorage.setItem('subscriptionStatus', selectedOption);
+      if(isInputFilled && upiId.length > 8 && upiId.includes('@')){
+        setIsAlertOpen1(true);
+        setSubscriptionStatus(selectedOption);
+        localStorage.setItem('subscriptionStatus', selectedOption);
+        handleClose();
+      }else{
+        setIsAlertOpen2(true);
+      }
     }
-    handleClose();
   };
-  const handleCloseAlert = () => {
-    setIsAlertOpen(false);
+  const handleCloseAlert1 = () => {
+    setIsAlertOpen1(false);
+  };
+  const handleCloseAlert2 = () => {
+    setIsAlertOpen2(false);
   };
   const userName1 = JSON.parse(localStorage.getItem('sign_up_user'))
   const userName2 = JSON.parse(localStorage.getItem('sign_in_user'))
@@ -100,7 +115,7 @@ const Subscribe = () => {
                     </div>
                   </th>
                   <th className={selectedOption === '599' ? 'selected_th' : ''}>
-                    <div className='subscribe_table_head'>
+                    <div className='subscribe_table_head' onClick={() => handleOptionChange('599')}>
                       <div><input type='radio' style={{ width: '16px', height: '16px', marginBottom: '5px' }} onChange={() => handleOptionChange('599')}
                         checked={selectedOption === '599'} /></div>
                       <div style={{ fontSize: '14px', fontWeight: '500', marginBottom: '5px' }} className={selectedOption === '599' ? 'selected_th' : ''}>Mobile Only</div>
@@ -111,7 +126,7 @@ const Subscribe = () => {
                     </div>
                   </th>
                   <th className={selectedOption === '999' ? 'selected_th' : ''}>
-                    <div className='subscribe_table_head'>
+                    <div className='subscribe_table_head' onClick={() => handleOptionChange('999')}>
                       <div><input type='radio' style={{ width: '16px', height: '16px', marginBottom: '5px' }} onChange={() => handleOptionChange('999')}
                         checked={selectedOption === '999'} /></div>
                       <div style={{ fontSize: '14px', fontWeight: '500', marginBottom: '5px' }}>LIV Premium</div>
@@ -122,7 +137,7 @@ const Subscribe = () => {
                     </div>
                   </th>
                   <th className={selectedOption === '699' ? 'selected_th' : ''}>
-                    <div className='subscribe_table_head'>
+                    <div className='subscribe_table_head' onClick={() => handleOptionChange('699')}>
                       <div><input type='radio' style={{ width: '16px', height: '16px', marginBottom: '5px' }} onChange={() => handleOptionChange('699')}
                         checked={selectedOption === '699'} /></div>
                       <div style={{ fontSize: '14px', fontWeight: '500', marginBottom: '5px' }}>LIV Premium</div>
@@ -133,7 +148,7 @@ const Subscribe = () => {
                     </div>
                   </th>
                   <th className={selectedOption === '299' ? 'selected_th' : ''}>
-                    <div className='subscribe_table_head'>
+                    <div className='subscribe_table_head' onClick={() => handleOptionChange('299')}>
                       <div><input type='radio' style={{ width: '16px', height: '16px', marginBottom: '5px' }} onChange={() => handleOptionChange('299')}
                         checked={selectedOption === '299'} /></div>
                       <div style={{ fontSize: '14px', fontWeight: '500', marginBottom: '5px' }}>LIV Premium</div>
@@ -223,7 +238,8 @@ const Subscribe = () => {
         <Box sx={style}>
           <div className='subscribe_modal'>
             <h1>Enter UPI ID</h1>
-            <input type='text' placeholder='upi id...'/>
+            <input type='text' placeholder='upi id...' value={upiId}
+              onChange={handleInputChange}/>
             <button onClick={handlePayButtonClick}>Confirm and Pay</button>
           </div>
         </Box>
@@ -242,10 +258,17 @@ const Subscribe = () => {
           </div>
         ) : null}
       </div>
-        <Snackbar open={isAlertOpen} autoHideDuration={6000} onClose={handleCloseAlert}>
+        <Snackbar open={isAlertOpen1} autoHideDuration={6000} onClose={handleCloseAlert1}>
           <Stack sx={{ width: '100%' }} spacing={2}>
-            <Alert severity="success" onClose={handleCloseAlert}>
+            <Alert severity="success" onClose={handleCloseAlert1}>
               Payment Successful!
+            </Alert>
+          </Stack>
+        </Snackbar>
+        <Snackbar open={isAlertOpen2} autoHideDuration={6000} onClose={handleCloseAlert2}>
+          <Stack sx={{ width: '100%' }} spacing={2}>
+            <Alert severity="error" onClose={handleCloseAlert2}>
+              length should be 8 and includes @!
             </Alert>
           </Stack>
         </Snackbar>
