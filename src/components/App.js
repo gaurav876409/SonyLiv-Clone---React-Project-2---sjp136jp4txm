@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import '../styles/App.css';
 import Navbar from './Navbar/Navbar';
 import Home from './Home/Home';
@@ -14,8 +14,10 @@ import Subscribe from './Subscribe/Subscribe';
 import Footer from './Footer/Footer';
 import Upload from './Upload/Upload';
 import ProtectedRoute from './Utils/ProtectedRoute';
+import {useSelector} from "react-redux"
 
 const App = () => {
+  const user2 = useSelector((state) => state.user.signupUser);
   return (
     <div id="main">
       <Router basename='/'>

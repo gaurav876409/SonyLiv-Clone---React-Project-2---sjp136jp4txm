@@ -11,6 +11,7 @@ import Stack from '@mui/material/Stack';
 import Snackbar from '@mui/material/Snackbar';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
+import CircularProgress from '@mui/material/CircularProgress';
 const style = {
   position: 'absolute',
   top: '50%',
@@ -24,8 +25,9 @@ const style = {
 };
 
 const Subscribe = () => {
-  const [open, setOpen] = React.useState(false);
-  const [upiId, setUpiId] = React.useState(''); 
+  const [isLoading, setIsLoading] = useState(false);
+  const [open, setOpen] = useState(false);
+  const [upiId, setUpiId] = useState(''); 
   const [isInputFilled, setIsInputFilled] = useState(false); 
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -33,6 +35,8 @@ const Subscribe = () => {
   const [selectedOption, setSelectedOption] = useState('599');
   const [isAlertOpen1, setIsAlertOpen1] = useState(false);
   const [isAlertOpen2, setIsAlertOpen2] = useState(false);
+  const [isAlertOpen3, setIsAlertOpen3] = useState(false);
+  const [isAlertOpen4, setIsAlertOpen4] = useState(false);
   const [subscriptionStatus, setSubscriptionStatus] = useState(null);
   const settings = {
     dots: false,
@@ -52,30 +56,53 @@ const Subscribe = () => {
   }, []);
   const handleOptionChange = (price) => {
     setSelectedOption(price);
-    setSubscriptionStatus(null);
   };
   const handleInputChange = (event) => {
     const { value } = event.target;
     setUpiId(value); 
     setIsInputFilled(value !== ''); 
   };
-  const handlePayButtonClick = () => {
-    if (subscriptionStatus !== selectedOption) {
-      if(isInputFilled && upiId.length > 8 && upiId.includes('@')){
+  const handlePayButtonClick = (selectedOption) => {
+    const boughtSubscription = localStorage.getItem('subscriptionStatus')
+    if(boughtSubscription){
+      if(boughtSubscription === selectedOption){
+        setIsAlertOpen3(true)
+      }else if(boughtSubscription > selectedOption){
+        setIsAlertOpen4(true)
+      }else{
+        handleOpen();
+      }
+    }else{
+      handleOpen();
+    }
+  };
+
+  const handleConfirm = () => {
+    if(isInputFilled && upiId.length > 8 && upiId.includes('@')){
+      setIsLoading(true);
+      setTimeout(() => {
+        setIsLoading(false);
         setIsAlertOpen1(true);
         setSubscriptionStatus(selectedOption);
         localStorage.setItem('subscriptionStatus', selectedOption);
+        setUpiId('')
         handleClose();
-      }else{
-        setIsAlertOpen2(true);
-      }
+      }, 5000)
+    }else{
+      setIsAlertOpen2(true);
     }
-  };
+  }
   const handleCloseAlert1 = () => {
     setIsAlertOpen1(false);
   };
   const handleCloseAlert2 = () => {
     setIsAlertOpen2(false);
+  };
+  const handleCloseAlert3 = () => {
+    setIsAlertOpen3(false);
+  };
+  const handleCloseAlert4 = () => {
+    setIsAlertOpen4(false);
   };
   const userName1 = JSON.parse(localStorage.getItem('sign_up_user'))
   const userName2 = JSON.parse(localStorage.getItem('sign_in_user'))
@@ -226,8 +253,7 @@ const Subscribe = () => {
           </div>
         </div>
         <div className='subscribe_button'>
-          {/* <button onClick={handlePayButtonClick}>Pay <FaRupeeSign style={{ fontSize: '14px', marginTop: '5px' }} />{selectedOption}</button> */}
-          <button onClick={handleOpen}>Pay <FaRupeeSign style={{ fontSize: '14px', marginTop: '5px' }} />{selectedOption}</button>
+          <button onClick={() => handlePayButtonClick(selectedOption)}>Pay <FaRupeeSign style={{ fontSize: '14px', marginTop: '5px' }} />{selectedOption}</button>
         </div>
         <Modal
         open={open}
@@ -240,7 +266,7 @@ const Subscribe = () => {
             <h1>Enter UPI ID</h1>
             <input type='text' placeholder='upi id...' value={upiId}
               onChange={handleInputChange}/>
-            <button onClick={handlePayButtonClick}>Confirm and Pay</button>
+            <button onClick={handleConfirm}>Confirm and Pay</button>
           </div>
         </Box>
       </Modal>
@@ -252,11 +278,11 @@ const Subscribe = () => {
           </ul>
         </div>
         <div className='subscribe_status'>
-        {subscriptionStatus ? (
+        {subscriptionStatus && (
           <div>
             <p>You are subscribed to: {subscriptionStatus} plan</p>
           </div>
-        ) : null}
+        )}
       </div>
         <Snackbar open={isAlertOpen1} autoHideDuration={6000} onClose={handleCloseAlert1}>
           <Stack sx={{ width: '100%' }} spacing={2}>
@@ -272,6 +298,36 @@ const Subscribe = () => {
             </Alert>
           </Stack>
         </Snackbar>
+        <Snackbar open={isAlertOpen3} autoHideDuration={6000} onClose={handleCloseAlert3}>
+          <Stack sx={{ width: '100%' }} spacing={2}>
+            <Alert severity="success" onClose={handleCloseAlert3}>
+            already subscribed!
+            </Alert>
+          </Stack>
+        </Snackbar>
+        <Snackbar open={isAlertOpen4} autoHideDuration={6000} onClose={handleCloseAlert4}>
+          <Stack sx={{ width: '100%' }} spacing={2}>
+            <Alert severity="error" onClose={handleCloseAlert4}>
+            Already Subscribed to a higher Plan!
+            </Alert>
+          </Stack>
+        </Snackbar>
+        {isLoading && (
+        <Box sx={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          backgroundColor: 'rgba(0, 0, 0, 0.7)', 
+          zIndex: 9999,
+        }}>
+          <CircularProgress />
+        </Box>
+        )}
       </div>
     </div>
   )

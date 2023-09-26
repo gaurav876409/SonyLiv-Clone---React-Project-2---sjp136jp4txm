@@ -3,11 +3,13 @@ import {useSelector} from "react-redux"
 import {Navigate, useLocation} from "react-router-dom"
 
 const ProtectedRoute = ({children}) => {
-    const user = useSelector((state) => state.user.user);
+    const user1 = useSelector((state) => state.user.signinUser);
+    const user2 = useSelector((state) => state.user.signupUser);
     let location = useLocation();
-
-    if(!user?.token) {
-        return <Navigate to="/" state={{ from: location}} replace />
+    console.log('line 9', user1)
+    console.log('line 10', user2)
+    if(!user1 && !user2) {
+        return <Navigate to="/"/>
     }
   return children
 }

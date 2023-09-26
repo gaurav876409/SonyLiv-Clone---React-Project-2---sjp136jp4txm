@@ -58,6 +58,7 @@ const UserReducer = (state = initialState, action) => {
             ...state,
             signupUser: null,
             signinUser: null,
+            error: null,
         };
     default:
         return state;

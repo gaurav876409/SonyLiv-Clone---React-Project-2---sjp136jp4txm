@@ -10,6 +10,21 @@ const Login = () => {
   const dispatch = useDispatch();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const user2 = useSelector((state) => state.user.signupUser);
+  const user1 = useSelector((state) => state.user.signinUser);
+  // useEffect(() => {
+  //   if(user2) {
+  //     navigate('/home')
+  // }
+  // }, [])
+  // if(user2){
+  //   navigate('/home')
+  // }
+  useEffect(() => {
+    if (user1 || user2) {
+      navigate('/home');
+    }
+  }, [user1, user2]);
 
   const handleLogin = () => {
     dispatch(login(email, password));
