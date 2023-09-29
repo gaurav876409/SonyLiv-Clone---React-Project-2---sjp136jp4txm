@@ -27,7 +27,7 @@ const UserReducer = (state = initialState, action) => {
         return {
             ...state,
             signupUser: null,
-            error: action.payload,
+            error: action.payload.response.data,
         };
     case LOGIN_SUCCESS:
         return {
@@ -39,7 +39,7 @@ const UserReducer = (state = initialState, action) => {
         return {
             ...state,
             signinUser: null,
-            error: action.payload,
+            error: action.payload.response.data,
         };
     case UPDATE_PASSWORD_SUCCESS:
         return {
@@ -49,7 +49,7 @@ const UserReducer = (state = initialState, action) => {
     case UPDATE_PASSWORD_FAILURE:
         return {
             ...state,
-            error: action.payload,
+            error: action.payload.response.data,
         };
     case LOGOUT:
         localStorage.removeItem('sign_up_user');

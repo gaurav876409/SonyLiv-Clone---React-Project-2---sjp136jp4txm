@@ -27,8 +27,8 @@ const style = {
 const Subscribe = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [open, setOpen] = useState(false);
-  const [upiId, setUpiId] = useState(''); 
-  const [isInputFilled, setIsInputFilled] = useState(false); 
+  const [upiId, setUpiId] = useState('');
+  const [isInputFilled, setIsInputFilled] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   const showDetails = useSelector(state => state.showDetails.showDetails);
@@ -38,6 +38,26 @@ const Subscribe = () => {
   const [isAlertOpen3, setIsAlertOpen3] = useState(false);
   const [isAlertOpen4, setIsAlertOpen4] = useState(false);
   const [subscriptionStatus, setSubscriptionStatus] = useState(null);
+  const [displayNone, setDisplayNone] = useState(true)
+  // const userEmailSignin = useSelector(state => state.user.signinUser?.data?.email);
+  // const userEmailSignup = useSelector(state => state.user.signupUser.data.email);
+  const userEmailSignin = JSON.parse(localStorage.getItem('sign_in_user'));
+  const userEmailSignup = JSON.parse(localStorage.getItem('sign_up_user'));
+  const [userEmail, setUserEmail] = useState(() => {
+    if(userEmailSignin){
+    return userEmailSignin.data.email
+  }
+  return userEmailSignup.data.user.email
+  })
+console.log(userEmail);
+  // if(userEmailSignin){
+  //   setUserEmail(userEmailSignin)
+  // }else{
+  //   setUserEmail(userEmailSignup)
+  // }
+  // console.log('line 50', userEmail)
+  console.log('line 52', userEmailSignin)
+  console.log('line 53', userEmailSignup)
   const settings = {
     dots: false,
     infinite: true,
@@ -48,47 +68,78 @@ const Subscribe = () => {
     autoplaySpeed: 0,
     cssEase: 'linear',
   };
+  // useEffect(() => {
+  //   const savedSubscriptionStatus = localStorage.getItem('subscriptionStatus');
+  //   if (savedSubscriptionStatus) {
+  //     setSubscriptionStatus(savedSubscriptionStatus);
+  //   }
+  // }, []);
   useEffect(() => {
-    const savedSubscriptionStatus = localStorage.getItem('subscriptionStatus');
+    const savedSubscriptionStatus = localStorage.getItem(`subscriptionStatus-${userEmail}`);
     if (savedSubscriptionStatus) {
       setSubscriptionStatus(savedSubscriptionStatus);
+      if (savedSubscriptionStatus === selectedOption) {
+        setDisplayNone(false);
+      } else if (savedSubscriptionStatus > selectedOption) {
+        setDisplayNone(false);
+      } else {
+        setDisplayNone(true);
+      }
+    } else {
+      setDisplayNone(true);
     }
-  }, []);
+  }, [selectedOption]);
   const handleOptionChange = (price) => {
     setSelectedOption(price);
+    // if (localStorage.getItem('subscriptionStatus')) {
+    //   if (localStorage.getItem('subscriptionStatus') === price) {
+    //     setDisplayNone(false);
+    //   } else if(localStorage.getItem('subscriptionStatus') > price) {
+    //     setDisplayNone(false);
+    //   } else{
+    //     setDisplayNone(true)
+    //   }
+    // } else {
+    //   setDisplayNone(true);
+    // }
   };
   const handleInputChange = (event) => {
     const { value } = event.target;
-    setUpiId(value); 
-    setIsInputFilled(value !== ''); 
+    setUpiId(value);
+    setIsInputFilled(value !== '');
   };
-  const handlePayButtonClick = (selectedOption) => {
-    const boughtSubscription = localStorage.getItem('subscriptionStatus')
-    if(boughtSubscription){
-      if(boughtSubscription === selectedOption){
-        setIsAlertOpen3(true)
-      }else if(boughtSubscription > selectedOption){
-        setIsAlertOpen4(true)
-      }else{
-        handleOpen();
-      }
-    }else{
-      handleOpen();
-    }
+  const handleInputFocus = () => {
+    setIsInputFilled(true); 
   };
+  const handlePayButtonClick = () => {
+    handleOpen();
+      // const boughtSubscription = localStorage.getItem('subscriptionStatus')
+      // if (boughtSubscription) {
+      //   if (boughtSubscription === selectedOption) {
+      //     setIsAlertOpen3(true)
+      //   } else if (boughtSubscription > selectedOption) {
+      //     setIsAlertOpen4(true)
+      //   } else {
+      //     handleOpen();
+      //   }
+      // } else {
+      //   handleOpen();
+      // }
+  };
+  
 
   const handleConfirm = () => {
-    if(isInputFilled && upiId.length > 8 && upiId.includes('@')){
+    if (isInputFilled && upiId.length > 8 && upiId.includes('@')) {
       setIsLoading(true);
       setTimeout(() => {
         setIsLoading(false);
         setIsAlertOpen1(true);
         setSubscriptionStatus(selectedOption);
-        localStorage.setItem('subscriptionStatus', selectedOption);
+        localStorage.setItem(`subscriptionStatus-${userEmail}`, selectedOption);
         setUpiId('')
         handleClose();
       }, 5000)
-    }else{
+    } else {
       setIsAlertOpen2(true);
     }
   }
@@ -253,23 +304,27 @@ const Subscribe = () => {
           </div>
         </div>
         <div className='subscribe_button'>
-          <button onClick={() => handlePayButtonClick(selectedOption)}>Pay <FaRupeeSign style={{ fontSize: '14px', marginTop: '5px' }} />{selectedOption}</button>
+          {displayNone && (
+            <button onClick={() => handlePayButtonClick(selectedOption)}>
+              Pay <FaRupeeSign style={{ fontSize: '14px', marginTop: '5px' }} />{selectedOption}
+            </button>
+          )}
         </div>
         <Modal
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
-      >
-        <Box sx={style}>
-          <div className='subscribe_modal'>
-            <h1>Enter UPI ID</h1>
-            <input type='text' placeholder='upi id...' value={upiId}
-              onChange={handleInputChange}/>
-            <button onClick={handleConfirm}>Confirm and Pay</button>
-          </div>
-        </Box>
-      </Modal>
+          open={open}
+          onClose={handleClose}
+          aria-labelledby="modal-modal-title"
+          aria-describedby="modal-modal-description"
+        >
+          <Box sx={style}>
+            <div className='subscribe_modal'>
+              <h1>Enter UPI ID</h1>
+              <input type='text' placeholder={isInputFilled ? '' : 'upi id...'} value={upiId}
+                onChange={handleInputChange} onFocus={handleInputFocus}/>
+              <button onClick={handleConfirm}>Confirm and Pay</button>
+            </div>
+          </Box>
+        </Modal>
         <div className='subscribe_list'>
           <ul>
             <li>Terms and Conditions<span className='subscribe_list_dot'></span></li>
@@ -278,12 +333,12 @@ const Subscribe = () => {
           </ul>
         </div>
         <div className='subscribe_status'>
-        {subscriptionStatus && (
-          <div>
-            <p>You are subscribed to: {subscriptionStatus} plan</p>
-          </div>
-        )}
-      </div>
+          {subscriptionStatus && (
+            <div>
+              <p>You are subscribed to: {subscriptionStatus} plan</p>
+            </div>
+          )}
+        </div>
         <Snackbar open={isAlertOpen1} autoHideDuration={6000} onClose={handleCloseAlert1}>
           <Stack sx={{ width: '100%' }} spacing={2}>
             <Alert severity="success" onClose={handleCloseAlert1}>
@@ -301,32 +356,32 @@ const Subscribe = () => {
         <Snackbar open={isAlertOpen3} autoHideDuration={6000} onClose={handleCloseAlert3}>
           <Stack sx={{ width: '100%' }} spacing={2}>
             <Alert severity="success" onClose={handleCloseAlert3}>
-            already subscribed!
+              already subscribed!
             </Alert>
           </Stack>
         </Snackbar>
         <Snackbar open={isAlertOpen4} autoHideDuration={6000} onClose={handleCloseAlert4}>
           <Stack sx={{ width: '100%' }} spacing={2}>
             <Alert severity="error" onClose={handleCloseAlert4}>
-            Already Subscribed to a higher Plan!
+              Already Subscribed to a higher Plan!
             </Alert>
           </Stack>
         </Snackbar>
         {isLoading && (
-        <Box sx={{
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          position: 'fixed',
-          top: 0,
-          left: 0,
-          width: '100%',
-          height: '100%',
-          backgroundColor: 'rgba(0, 0, 0, 0.7)', 
-          zIndex: 9999,
-        }}>
-          <CircularProgress />
-        </Box>
+          <Box sx={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            backgroundColor: 'rgba(0, 0, 0, 0.7)',
+            zIndex: 9999,
+          }}>
+            <CircularProgress />
+          </Box>
         )}
       </div>
     </div>

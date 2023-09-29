@@ -57,6 +57,9 @@ export const signup = (name, email, password) => async dispatch => {
   }
 };
 
+
+
+
 export const login = (email, password) => async dispatch => {
   try {
     const response = await axios.post('https://academics.newtonschool.co/api/v1/user/login', {
