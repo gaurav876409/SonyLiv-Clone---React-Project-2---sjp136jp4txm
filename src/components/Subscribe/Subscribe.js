@@ -12,6 +12,7 @@ import Snackbar from '@mui/material/Snackbar';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import CircularProgress from '@mui/material/CircularProgress';
+import { useNavigate } from 'react-router-dom';
 const style = {
   position: 'absolute',
   top: '50%',
@@ -35,14 +36,11 @@ const Subscribe = () => {
   const [selectedOption, setSelectedOption] = useState('599');
   const [isAlertOpen1, setIsAlertOpen1] = useState(false);
   const [isAlertOpen2, setIsAlertOpen2] = useState(false);
-  const [isAlertOpen3, setIsAlertOpen3] = useState(false);
-  const [isAlertOpen4, setIsAlertOpen4] = useState(false);
   const [subscriptionStatus, setSubscriptionStatus] = useState(null);
   const [displayNone, setDisplayNone] = useState(true)
-  // const userEmailSignin = useSelector(state => state.user.signinUser?.data?.email);
-  // const userEmailSignup = useSelector(state => state.user.signupUser.data.email);
   const userEmailSignin = JSON.parse(localStorage.getItem('sign_in_user'));
   const userEmailSignup = JSON.parse(localStorage.getItem('sign_up_user'));
+  const navigate = useNavigate();
   const [userEmail, setUserEmail] = useState(() => {
     if(userEmailSignin){
     return userEmailSignin.data.email
@@ -50,12 +48,6 @@ const Subscribe = () => {
   return userEmailSignup.data.user.email
   })
 console.log(userEmail);
-  // if(userEmailSignin){
-  //   setUserEmail(userEmailSignin)
-  // }else{
-  //   setUserEmail(userEmailSignup)
-  // }
-  // console.log('line 50', userEmail)
   console.log('line 52', userEmailSignin)
   console.log('line 53', userEmailSignup)
   const settings = {
@@ -68,12 +60,6 @@ console.log(userEmail);
     autoplaySpeed: 0,
     cssEase: 'linear',
   };
-  // useEffect(() => {
-  //   const savedSubscriptionStatus = localStorage.getItem('subscriptionStatus');
-  //   if (savedSubscriptionStatus) {
-  //     setSubscriptionStatus(savedSubscriptionStatus);
-  //   }
-  // }, []);
   useEffect(() => {
     const savedSubscriptionStatus = localStorage.getItem(`subscriptionStatus-${userEmail}`);
     if (savedSubscriptionStatus) {
@@ -91,17 +77,6 @@ console.log(userEmail);
   }, [selectedOption]);
   const handleOptionChange = (price) => {
     setSelectedOption(price);
-    // if (localStorage.getItem('subscriptionStatus')) {
-    //   if (localStorage.getItem('subscriptionStatus') === price) {
-    //     setDisplayNone(false);
-    //   } else if(localStorage.getItem('subscriptionStatus') > price) {
-    //     setDisplayNone(false);
-    //   } else{
-    //     setDisplayNone(true)
-    //   }
-    // } else {
-    //   setDisplayNone(true);
-    // }
   };
   const handleInputChange = (event) => {
     const { value } = event.target;
@@ -113,18 +88,6 @@ console.log(userEmail);
   };
   const handlePayButtonClick = () => {
     handleOpen();
-      // const boughtSubscription = localStorage.getItem('subscriptionStatus')
-      // if (boughtSubscription) {
-      //   if (boughtSubscription === selectedOption) {
-      //     setIsAlertOpen3(true)
-      //   } else if (boughtSubscription > selectedOption) {
-      //     setIsAlertOpen4(true)
-      //   } else {
-      //     handleOpen();
-      //   }
-      // } else {
-      //   handleOpen();
-      // }
   };
   
 
@@ -138,6 +101,9 @@ console.log(userEmail);
         localStorage.setItem(`subscriptionStatus-${userEmail}`, selectedOption);
         setUpiId('')
         handleClose();
+        setTimeout(() => {
+          navigate('/home')
+        }, 2000)
       }, 5000)
     } else {
       setIsAlertOpen2(true);
@@ -350,20 +316,6 @@ console.log(userEmail);
           <Stack sx={{ width: '100%' }} spacing={2}>
             <Alert severity="error" onClose={handleCloseAlert2}>
               length should be 8 and includes @!
-            </Alert>
-          </Stack>
-        </Snackbar>
-        <Snackbar open={isAlertOpen3} autoHideDuration={6000} onClose={handleCloseAlert3}>
-          <Stack sx={{ width: '100%' }} spacing={2}>
-            <Alert severity="success" onClose={handleCloseAlert3}>
-              already subscribed!
-            </Alert>
-          </Stack>
-        </Snackbar>
-        <Snackbar open={isAlertOpen4} autoHideDuration={6000} onClose={handleCloseAlert4}>
-          <Stack sx={{ width: '100%' }} spacing={2}>
-            <Alert severity="error" onClose={handleCloseAlert4}>
-              Already Subscribed to a higher Plan!
             </Alert>
           </Stack>
         </Snackbar>
