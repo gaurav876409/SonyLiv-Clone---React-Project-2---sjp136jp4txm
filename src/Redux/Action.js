@@ -87,7 +87,7 @@ export const login = (email, password) => async dispatch => {
 
 export const updatePassword = (name, email, passwordCurrent, newPassword) => async dispatch => {
   try {
-    const storedUser = JSON.parse(localStorage.getItem('user'));
+    const storedUser = JSON.parse(localStorage.getItem('sign_in_user'));
     const token = storedUser.token;
     const response = await axios.patch('https://academics.newtonschool.co/api/v1/user/updateMyPassword', {
       name,

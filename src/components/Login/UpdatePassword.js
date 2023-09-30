@@ -24,10 +24,13 @@ const UpdatePassword = () => {
       setIsDisplay(true);
     }, 1000)
     // setIsAlertOpen(true);
+    if(error === null){
+      setTimeout(() => {
+        navigate('/home')
+      }, 2000)
+    }
   };
-  // setTimeout(() => {
-  //   navigate('/home')
-  // }, 2000)
+
   const handleCloseAlert = () => {
     setIsAlertOpen(false);
   };
@@ -57,7 +60,7 @@ const UpdatePassword = () => {
             onChange={e => setNewPassword(e.target.value)}
           />
         </div>
-        {error !== null && (<div className='error_message' style={{display: isDisplay ? 'block' : 'none'}}>{error.message}</div>)}
+        {error !== null ? (<div className='error_message' style={{ display: isDisplay ? 'block' : 'none' }}>{error?.message}</div>) : (<div className='success_message' style={{ display: isDisplay ? 'block' : 'none' }}>success</div>)}
         <div className='login_body_button'>
           <button onClick={handleUpdatePassword}>Update Password</button>
         </div>
