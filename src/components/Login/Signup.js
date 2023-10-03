@@ -19,10 +19,12 @@ const Signup = () => {
     if(!password){
       setPasswordError(true);
     }
-    dispatch(signup(name, email, password))
-      setTimeout(() => {
-          setIsDisplay(true);
-      }, 1000)
+    if(password){
+      dispatch(signup(name, email, password))
+        setTimeout(() => {
+            setIsDisplay(true);
+        }, 1000)
+    }
   };
   
   const sign_up_user = useSelector(state => state.user.signupUser);

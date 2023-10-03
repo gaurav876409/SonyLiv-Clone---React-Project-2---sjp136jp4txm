@@ -56,6 +56,7 @@
 .slide_content_button{
     display: flex;
     gap: 20px;
+    cursor: pointer;
 }
 .slide_content_add_plus{
     color: white;
@@ -79,6 +80,7 @@
     background-color: #ffffff;
     border: none;
     margin-top: 5px;
+    cursor: pointer;
 }
 .slide_content_share_sign{
     width: 32px;
